@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import InputMail from '../inputMail/InputMail';
 
 const Footer = () => {
     return (
@@ -9,12 +10,7 @@ const Footer = () => {
                     <h2>Pour être tenu au courant des projets à venir</h2>
                 </div>
                 <div>
-                    <form action="">
-                        <input className="input" type="text" placeholder="Email" />
-                        <div>
-                            <button className="button">S'abonner</button>
-                        </div>
-                    </form>
+                    <InputMail />
                 </div>
             </footer>
         </>
