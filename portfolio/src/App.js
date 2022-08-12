@@ -17,10 +17,6 @@ function App() {
       <PreviewProject/>
       <Split/>
       <Footer/>
-
-
-
-      
     </div>
   );
 }
