@@ -1,10 +1,9 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Main from "./components/main/Main";
-import PreviewProject from "./components/previewProject/PreviewProject";
 import Footer from "./components/footer/Footer";
-import Split from './components/split/Split';
-import Contact from "./pages/contact/Contact";
+import data from './config/data';
+import ProjectsList from "./components/projectList/ProjectsList";
 
 function App() {
   
@@ -12,10 +11,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Main/>
-      <PreviewProject/>
-      <Split/>
-      <PreviewProject/>
-      <Split/>
+      <ProjectsList projects={data}/>
       <Footer/>
     </div>
   );
