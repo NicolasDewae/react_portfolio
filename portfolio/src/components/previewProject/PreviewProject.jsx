@@ -1,20 +1,35 @@
 import React from 'react';
 import './PreviewProject.css';
-import img from '../../assets/img/street_view-2.jpg';
+import { Link } from 'react-router-dom';
+import Split from '../split/Split';
 
-const PreviewProject = () => {
+const PreviewProject = ({
+    
+    projects: {
+        title,
+        picture,
+    }
+
+}) => {
+
+    
     return (
         <>
             <div className="preview">
                 <div className="picture">
-                    <img src={img} alt="google street view" />
+                    <img src={picture} alt="photo du projet" />
                 </div>
                 <div className="title">
-                    <h2>Titre du projet</h2>
+                    <h2>{title}</h2>
                 </div>
-                <a className="button">
-                    Voir le projet
-                </a>
+                <Link to={`/projects/${title}`}>
+                    <a className="button">
+                        Voir le projet
+                    </a>
+                </Link>
+            </div>
+            <div>
+                <Split />
             </div>
         </>
     );
