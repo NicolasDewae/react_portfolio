@@ -6,6 +6,7 @@ import Split from '../split/Split';
 const PreviewProject = ({
     
     projects: {
+        id,
         title,
         picture,
     }
@@ -22,7 +23,7 @@ const PreviewProject = ({
                 <div className="title">
                     <h2>{title}</h2>
                 </div>
-                <Link to={`/projects/${title}`}>
+                <Link to={`/project/${id}`}>
                     <a className="button">
                         Voir le projet
                     </a>
