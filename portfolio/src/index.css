@@ -14,3 +14,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1, h2, h3 {
+  font-family: 'Alfa Slab One', cursive;
+}
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0 9% 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  padding: 8px 24px;
+  margin: 4px 0 0 10px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  h2 {
+      font-size: 1.8rem;
+  }
+}
+
+
+@media screen and (max-width: 1007px) {
+  h1{
+      font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1{
+      font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: 15px;
+    padding: 4px 12px;
+    margin: 2px 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1{
+      font-size: 2rem;
+  }
+}
