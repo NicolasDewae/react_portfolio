@@ -1,0 +1,45 @@
+.preview-project {
+    width: 400px;
+    height: 100%;
+    border: 2px;
+    border-style: solid;
+    border-color: #000;
+    margin: 10px;
+}
+
+.preview-project .picture {
+    width: 380px;
+    height: 490px;
+    overflow: hidden;
+
+}
+
+.preview-project img {
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.preview-project .title h3 {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.preview-project:hover {
+    box-shadow: 3px 3px 15px black;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1070px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
