@@ -5,25 +5,8 @@
     justify-content: space-between;
 }
 
-.footer h2 {
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 3rem;
-    margin: 0 9% 0 0;
-    padding: 0 0 0 0;
-    display: flex;
-}
-
-@media screen and (max-width: 1200px) {
-    .footer h2 {
-        font-size: 1.8rem;
-    }
-}
 
 @media screen and (max-width: 1007px) {
-    .footer h2 {
-        font-size: 2rem;
-    }
-
     .footer {
         display: block;
     }
