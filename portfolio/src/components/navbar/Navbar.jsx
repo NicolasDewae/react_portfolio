@@ -16,15 +16,17 @@ const Navbar = () => {
                 </div>
                 <nav className={`nav ${showLinks ? "showNav" : "hideNav"}`}>
                     <ul className="links">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/work">Work</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/projects">Projects</a></li>
                         <li><a href="/contact">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
                     </ul>
                     <button className="burger" onClick={handleShowLinks}>
                         <span className="burger_line"></span>
                     </button>
                 </nav>
+                <div>
+                </div>
             </div>
         </>
     );
