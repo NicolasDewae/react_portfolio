@@ -154,25 +154,25 @@ nav ul {
 }
 
 /* mobile */
-@media screen and (max-width: 600px) {
-    .header .burger {
-        margin-left: 40vh;
-    }
-}
-
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 710px) {
     .header .burger {
         margin-left: 30vh;
     }
 }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 530px) {
     .header .burger {
         margin-left: 20vh;
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 445px) {
+    .header .burger {
+        margin-left: 15vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
     .header .burger {
         margin-left: 10vh;
     }
