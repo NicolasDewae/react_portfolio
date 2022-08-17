@@ -2,13 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './InputMail.css';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
-
-
-
-
-
-
-
 const CustomForm = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
@@ -64,14 +57,6 @@ const CustomForm = ({ status, message, onValidated }) => {
 };
 
 
-
-
-
-
-
-
-
-
 const InputMail = props => {
     const postUrl = `https://protonmail.us13.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
 
@@ -87,10 +72,3 @@ const InputMail = props => {
 }
 
 export default InputMail;
-
-            {/* <form action="">
-                <input className="input" type="text" placeholder="Email" />
-                <div>
-                    <button className="button">S'abonner</button>
-                </div>
-            </form> */}
