@@ -8,16 +8,15 @@
 }
 
 .preview-project .picture {
-    width: 380px;
-    height: 490px;
-    overflow: hidden;
-
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
 }
 
 .preview-project img {
-    height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 90%;
+    height: auto;
 }
 
 .preview-project .title h3 {
@@ -32,14 +31,28 @@
     transition: 0.5s;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 836px) {
+    .preview-project {
+        width: 300px;
+        height: auto;
+    }
 
+    .preview-project .title h3 {
+        font-size: 18px;
+    }
+
+    .preview-project .picture {
+        width: 280px;
+        height: auto;
+        margin: 0 0 10px 10px;
+    }
+
+    .preview-project img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 1070px) {
-
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 655px) {
 
 }
