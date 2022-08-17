@@ -16,3 +16,9 @@ p {
     border-radius: 10px;
     padding: 20px;
 }
+
+@media screen and (max-width: 1007px) {
+    .contact {
+        flex-direction: column;
+    }
+}
