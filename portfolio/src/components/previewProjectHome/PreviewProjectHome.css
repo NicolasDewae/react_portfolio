@@ -1,0 +1,58 @@
+.preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.preview .picture {
+    width: 60%;
+    float: inline-start;    
+}
+
+.preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 30px;
+    display: flex;
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0;
+    padding: 0 0 0 10px;
+} 
+
+@media screen and (max-width: 1200px) {
+    .preview .title {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .preview .picture {
+        width: 100%;
+        display: block;    
+    }
+    
+    .preview img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .preview .picture {
+        width: 100%;
+        display: block;    
+    }
+    
+    .preview img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .preview .title {
+        font-size: 20px;
+    }
+}
