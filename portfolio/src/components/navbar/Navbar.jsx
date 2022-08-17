@@ -12,7 +12,7 @@ const Navbar = () => {
         <>
             <div className="header">
                 <div className="title">
-                    <a href="/">Nicolas De Waegenaere</a>
+                    <a href="/">Firsname Lastname</a>
                 </div>
                 <nav className={`nav ${showLinks ? "showNav" : "hideNav"}`}>
                     <ul className="links">
