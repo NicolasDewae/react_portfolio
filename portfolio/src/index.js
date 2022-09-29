@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Article from './pages/article/Article';
-import Projects from './pages/projects/Projects';
+import Works from './pages/works/Works';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={ <App /> } />
         <Route path="/about" element={ <About /> } />
-        <Route path="/work" element={ <Projects /> } />
+        <Route path="/work" element={ <Works /> } />
         <Route path="/contact" element={ <Contact /> } />
         <Route path="/blog/:id" element={ <Article /> } />
       </Routes>

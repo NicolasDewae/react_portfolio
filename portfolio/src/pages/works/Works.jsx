@@ -1,13 +1,14 @@
 import React from "react";
-import './Projects.css';
+import './Works.css';
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import projectsData from '../../config/projectsData';
 import CardProject from "../../components/cardProject/CardProject";
 import { Link } from 'react-router-dom';
 import Carousel from "../../components/carousel/Carousel";
+import Split from "../../components/split/Split";
 
-const Projects = () => {
+const Works = () => {
     return (
         <>
             <Navbar />
@@ -17,16 +18,16 @@ const Projects = () => {
                 </div>
             </div>
             <div className="project-list">
-                <CardProject pathway={projectsData[0].pathway} title={projectsData[0].title} picture={projectsData[3].projectImages[4]} />
-                <CardProject pathway={projectsData[1].pathway} title={projectsData[1].title} picture={projectsData[3].projectImages[4]} />
+                <CardProject pathway={projectsData[0].pathway} title={projectsData[0].title} picture={projectsData[0].picture} />
+                <CardProject pathway={projectsData[1].pathway} title={projectsData[1].title} picture={projectsData[1].picture} />
             </div>
             <div className="work-list">
                 <div className="carousel">
                     <Carousel 
-                        picture1={projectsData[0].projectImages[0]} 
-                        picture2={projectsData[1].projectImages[1]} 
-                        picture3={projectsData[2].projectImages[2]}
-                        picture4={projectsData[3].projectImages[3]} 
+                        picture1={projectsData[0].picture} 
+                        picture2={projectsData[1].picture} 
+                        picture3={projectsData[2].picture}
+                        picture4={projectsData[3].picture} 
                     />
                     <div className="column">
                         <div>
@@ -44,14 +45,13 @@ const Projects = () => {
                 <div className="black"></div>
             </div>
             <div className="project-list">
-                <CardProject pathway={projectsData[2].pathway} title={projectsData[2].title} picture={projectsData[3].projectImages[4]} />
-                <CardProject pathway={projectsData[3].pathway} title={projectsData[3].title} picture={projectsData[3].projectImages[4]} />
+                <CardProject pathway={projectsData[2].pathway} title={projectsData[2].title} picture={projectsData[2].picture} />
+                <CardProject pathway={projectsData[3].pathway} title={projectsData[3].title} picture={projectsData[3].picture} />
             </div>
-            <div className="split">
-                <Footer />
-            </div>
+            <Split />
+            <Footer />
         </>
     );
 }
 
-export default Projects;
+export default Works;
