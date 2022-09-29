@@ -1,8 +1,9 @@
 import React from 'react';
 import './Navbar.css';
 import { useState } from 'react';
+import { navLink } from '../../config/i18n';
 
-const Navbar = () => {
+const Navbar = (translate) => {
     const [showLinks, setShowLinks] = useState(false);
     const handleShowLinks = () => {
         setShowLinks(!showLinks);
@@ -16,10 +17,18 @@ const Navbar = () => {
                 </div>
                 <nav className={`nav ${showLinks ? "showNav" : "hideNav"}`}>
                     <ul className="links">
-                        <li><a href="/work">Work</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        {/* <li><a href="/blog">Blog</a></li> */}
+                    {navLink.map((link) => {
+                        link = translate.data ? link.fr : link.en;
+                        return (
+                            link.map((item) => {
+                                return (
+                                    <li>
+                                        <a href={item.url}>{item.title}</a>
+                                    </li>
+                                )
+                            })
+                        )
+                    })}
                     </ul>
                     <button className="burger" onClick={handleShowLinks}>
                         <span className="burger_line"></span>
