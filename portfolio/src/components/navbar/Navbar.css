@@ -19,7 +19,6 @@ nav ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    margin-left: 60%;
 }
     
 .links li a {
@@ -40,7 +39,7 @@ nav ul {
 }
 
 /* tablets */
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 1250px) {
     .header .links {
         flex-direction: column;
         justify-content: center;
