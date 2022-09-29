@@ -15,8 +15,9 @@
 }
 
 .preview-project img {
-    width: 90%;
+    max-width: 90%;
     height: auto;
+    object-fit: cover;
 }
 
 .preview-project .title h3 {
