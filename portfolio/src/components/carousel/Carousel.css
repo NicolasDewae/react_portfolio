@@ -12,6 +12,11 @@
     float: left;
 }
 
+.slide img {
+    width: 1000px;
+    height: auto;
+}
+
 @keyframes slide {
     0% {
         transform: translateX(0);
