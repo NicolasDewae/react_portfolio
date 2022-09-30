@@ -46,6 +46,20 @@ h2 {
   color: white;
 }
 
+.translateBtn {
+  /* background: transparent; */
+  border: none;
+  position: fixed;
+  top: 1%;
+  right: 88%;
+}
+
+.translateBtn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
 @media screen and (max-width: 1200px) {
   h2 {
       font-size: 1.8rem;
