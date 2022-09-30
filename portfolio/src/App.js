@@ -11,13 +11,14 @@ function App() {
   const handleTranslate = () => {
       setTranslate(!translate);
   }
+  
   return (
     <div className="App">
       {/* Translation button */}
       <button className='translateBtn' onClick={handleTranslate}>
-        <p className='translate'>
-            {translate ? 'Fr' : 'En'}
-        </p>
+          <p className='translate'>
+              {translate ? 'Fr' : 'En'}
+          </p>
       </button>
       <Navbar data={translate} />
       <Main data={translate} />

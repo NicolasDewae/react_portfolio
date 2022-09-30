@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './Works.css';
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
@@ -7,15 +7,24 @@ import CardProject from "../../components/cardProject/CardProject";
 import { Link } from 'react-router-dom';
 import Carousel from "../../components/carousel/Carousel";
 import Split from "../../components/split/Split";
+import Main from "../../components/main/Main";
 
 const Works = () => {
+    const [translate, setTranslate] = useState(false);
+    const handleTranslate = () => {
+        setTranslate(!translate);
+    }
     return (
         <>
-            <Navbar />
+            {/* Translation button */}
+            <button className='translateBtn' onClick={handleTranslate}>
+                <p className='translate'>
+                    {translate ? 'Fr' : 'En'}
+                </p>
+            </button>
+            <Navbar data={translate} />
             <div className="projects">
-                <div className="projects-title">
-                    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
-                </div>
+                <Main data={translate} />
             </div>
             <div className="project-list">
                 <CardProject pathway={projectsData[0].pathway} title={projectsData[0].title} picture={projectsData[0].picture} />
@@ -49,7 +58,7 @@ const Works = () => {
                 <CardProject pathway={projectsData[3].pathway} title={projectsData[3].title} picture={projectsData[3].picture} />
             </div>
             <Split />
-            <Footer />
+            <Footer data={translate} />
         </>
     );
 }
