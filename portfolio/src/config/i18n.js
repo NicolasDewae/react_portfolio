@@ -9,7 +9,7 @@ export const navLink = [
                 {
                     id: 2,
                     title: 'Projets',
-                    url: '/about',
+                    url: '/works',
                 },
                 {
                     id: 3,
@@ -52,13 +52,13 @@ export const mainContent = [
         fr: [
                 {
                     id: 1,
-                    message: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+                    message: 'Je suis un développeur web, spécialisé dans le développement front-end.',
                 }
         ],
         en: [
             {
                 id: 1,
-                message: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+                message: 'I am a web developer, I am passionate about web development and I am looking for a job.',
             }
         ],
     }
