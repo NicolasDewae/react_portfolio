@@ -5,10 +5,10 @@ import { mainContent } from '../../config/i18n';
 const Main = (translate) => {
     return (
         <>
-            {mainContent.map((link) => {
-                link = translate.data ? link.fr : link.en;
+            {mainContent.map((text) => {
+                text = translate.data ? text.fr : text.en;
                 return (
-                    link.map((item) => {
+                    text.map((item) => {
                         return (
                             <div className="main">
                                 <h1>{item.message}</h1>
