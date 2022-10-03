@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 import Split from '../split/Split';
 
 const PreviewProjectHome = ({
-    
     projects: {
-        pathway,
-        title,
         picture,
-    }
-
+        title,
+        pathway,
+    },
+    data
 }) => {
     
     return (
@@ -24,7 +23,7 @@ const PreviewProjectHome = ({
                 </div>
                 <Link to={`/project/${pathway}`}>
                     <a className="button">
-                        Voir le projet
+                        {data[0].button}
                     </a>
                 </Link>
             </div>
