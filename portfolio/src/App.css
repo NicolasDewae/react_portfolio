@@ -2,9 +2,6 @@ body {
     --grey: rgb(155, 155, 155);
     --black: rgb(0, 0, 0);
     --white: rgb(235, 235, 235);
-
-    --pFont: 'Cinzel', serif;
-    --hFont: 'Montserrat', sans-serif;
     
     /* desktop */
     --desktopPSize: 1.5rem;

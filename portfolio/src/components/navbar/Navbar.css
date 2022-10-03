@@ -19,7 +19,6 @@ nav ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    margin-left: 60%;
 }
     
 .links li a {
@@ -40,15 +39,16 @@ nav ul {
 }
 
 /* tablets */
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 1250px) {
     .header .links {
         flex-direction: column;
         justify-content: center;
         position: fixed;
         align-items: center;
         right: 100vh;
-        bottom: 0;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
+        margin: 0;
         padding: 2rem;
         background-color: black;
         z-index: 1;
@@ -62,7 +62,7 @@ nav ul {
 
     .header .burger {
         display: block;
-        margin-left: 50vh;
+        margin: 20px 0 0 400px;
     }
 
     .header .burger:hover {
@@ -160,6 +160,13 @@ nav ul {
 @media screen and (max-width: 710px) {
     .header .burger {
         margin-left: 30vh;
+    }
+
+    .header .links {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 

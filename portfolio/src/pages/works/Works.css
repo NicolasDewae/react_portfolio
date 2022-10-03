@@ -7,27 +7,18 @@
 }
 
 .work-list {
-    margin: 0 -13% 0 -13%; 
+    margin: 0 -13% 0 10%; 
     margin-top: 40px;
     display: flex;
     justify-content: right;
     height: 900px;
     width: auto;
-}
-
-.black {
-    display: flex;
     background-color: black;
-    width: 80%;
-    height: 100%;
-    /* margin: 0 -10% 0 0; */
 }
 
 .carousel {
     display: flex;
-    position: absolute;
-    top: 1100px;
-    left: 51px;
+    margin: 6% 0;
 }
 
 .carousel h2 {
@@ -66,6 +57,8 @@
 @media screen and (max-width: 1300px) {
     .work-list {
         justify-content: center;
+        visibility: hidden;
+        display: none;
     }
 
     .carousel {
@@ -74,8 +67,6 @@
     }
 
     .black {
-        visibility: hidden;
-        display: none;
     }
 
     .carousel h2 {
@@ -93,6 +84,10 @@
     .project-list {
         height: 100%;
         justify-content: center;
+    }
+
+    .carousel {
+        display: none;
     }
 }
 

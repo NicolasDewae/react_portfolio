@@ -2,7 +2,7 @@ import React from "react";
 import "./BlogList.css";
 import PreviewArticle from "../previewArticle/PreviewArticle";
 
-const BlogList = ({ articles }) => {
+const BlogList = ({ articles, translate }) => {
     return (
         <>
         <div className="blog-list">

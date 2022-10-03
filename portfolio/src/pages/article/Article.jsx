@@ -1,27 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
 import './Article.css';
 import blogBata from '../../config/blogData';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import Split from '../../components/split/Split';
 
 const Article = () => {
 
-        const { id } = useParams();
-        const [article, setBlog] = useState(null);
+    const [translate, setTranslate] = useState(false);
+    const handleTranslate = () => {
+        setTranslate(!translate);
+    }
+
+    const { id } = useParams();
+    const [article, setBlog] = useState(null);
       
-        useEffect(() => {
-          let article = blogBata.find((article) => article.id === parseInt(id));
-          if (article) {
-            setBlog(article);
-          }
-        }, []);
+    useEffect(() => {
+        let article = blogBata.find((article) => article.id === parseInt(id));
+        if (article) {
+        setBlog(article);
+        }
+    }, []);
     
     return (
         <>
-            <Navbar />
+            {/* Translation button */}
+            <button className='translateBtn' onClick={handleTranslate}>
+                <p className='translate'>
+                    {translate ? 'Fr' : 'En'}
+                </p>
+            </button>
+            <Navbar data={translate} />
             {article ? (
                 <div className="blog">
                     <div className="blog-title">
@@ -41,7 +51,7 @@ const Article = () => {
             ) : (
                 <Split />
             )}
-            <Footer />
+            <Footer data={translate}/>
         </>
     );
 }
