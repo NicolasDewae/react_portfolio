@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import './Works.css';
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import Carousel from "../../components/carousel/Carousel";
 import Split from "../../components/split/Split";
 import Main from "../../components/main/Main";
+import { previewProject } from "../../config/i18n";
 
 const Works = () => {
     const [translate, setTranslate] = useState(false);
@@ -43,15 +44,25 @@ const Works = () => {
                             <h2>{projectsData[0].title}</h2>
                         </div>
                         <div>
-                            <Link to={`/project/${projectsData[0].pathway}`}>
-                                <a className="button">
-                                    Voir le projet
-                                </a>
-                            </Link>
+                            {
+                                previewProject.map((text) => {
+                                    var btn = translate ? text.fr : text.en;
+                                    return (
+                                        btn.map((item) => {
+                                            return (
+                                                <Link to={`/project/${projectsData[0].pathway}`}>
+                                                    <button className="button">
+                                                        {item.button}
+                                                    </button>
+                                                </Link>
+                                            )
+                                        })
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
-                <div className="black"></div>
             </div>
             <div className="project-list">
                 <CardProject pathway={projectsData[2].pathway} title={projectsData[2].title} picture={projectsData[2].picture} />
