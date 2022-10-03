@@ -13,7 +13,7 @@ const Navbar = (translate) => {
         <>
             <div className="header">
                 <div className="title">
-                    <a href="/">Firsname Lastname</a>
+                    <a href="/">First name Last name</a>
                 </div>
                 <nav className={`nav ${showLinks ? "showNav" : "hideNav"}`}>
                     <ul className="links">
@@ -23,7 +23,7 @@ const Navbar = (translate) => {
                             link.map((item) => {
                                 return (
                                     <li>
-                                        <a href={item.url}>{item.title}</a>
+                                        <a href={item.pathway}>{item.title}</a>
                                     </li>
                                 )
                             })
