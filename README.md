@@ -1,4 +1,7 @@
-# Work in progress,
+> **Warning**
+> ## Work in progress
+
+# Photographer portfolio
 
 i'm learning react framework with a personnal photographer portfolio
 
