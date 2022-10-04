@@ -1,13 +1,74 @@
 .footer {
     margin: 70px 0 70px 0;
     padding: 0;
-    display: flex;
+    display: block;
     justify-content: space-between;
 }
 
+.footer .input_container {
+    display: flex;
+}
+
+.footer .notice_container {
+    display: flex;
+}
+
+.footer .notice_container a {
+    color: #000000;
+    margin: 20px;
+    font-size: var(--desktopPSize); 
+}
+
+.footer .left {
+    width: 35%;
+    margin-top: 8%;
+}
+
+.footer .right {
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 30px;
+}
+
+.footer p {
+    height: 70%;
+    width: 100%;
+}
+
+.footer .vertical-line {
+    margin: 0 20px;
+    border-left: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.footer #split {
+    margin-bottom: 0;
+}
 
 @media screen and (max-width: 1007px) {
     .footer {
         display: block;
     }
+}
+
+@media screen and (max-width: 800px) {
+
+    .footer .input_container,
+    .footer .notice_container {
+        display: block;    
+    }
+
+    .footer .notice_container .vertical-line{
+        visibility: hidden;
+    }
+
+    .footer .notice_container .right, 
+    .footer .notice_container .left {
+        width: 100%;
+    }
+
+    .footer .notice_container div {
+        margin: 8% 0;
+    }
+    
 }
