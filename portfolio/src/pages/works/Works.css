@@ -7,12 +7,9 @@
 }
 
 .work-list {
-    margin: 0 -13% 0 10%; 
-    margin-top: 40px;
+    margin: 15% -13% 15% 40%; 
     display: flex;
     justify-content: right;
-    height: 900px;
-    width: auto;
     background-color: black;
 }
 
