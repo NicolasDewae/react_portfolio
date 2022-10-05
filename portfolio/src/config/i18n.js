@@ -128,3 +128,32 @@ export const footer = [
         ],
     }
 ]
+
+export const contact = [
+    {
+        fr: [
+                {
+                    id: 1,
+                    title: 'Contactez-moi',
+                    text: 'Vous pouvez me contacter via le formulaire ci-contre',
+                    lastName: 'Nom',
+                    firstName: 'Prénom',
+                    email: 'Email',
+                    message: 'Méssage',
+                    button: 'Envoyer',
+                }
+        ],
+        en: [
+                {
+                    id: 1,
+                    title: 'Contact',
+                    text: 'You can contact me via the form below',
+                    lastName: 'Last name',
+                    firstName: 'First name',
+                    email: 'Email',
+                    message: 'Message',
+                    button: 'Send',
+                }
+        ],
+    }
+]
