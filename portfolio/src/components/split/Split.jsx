@@ -4,7 +4,7 @@ import './Split.css';
 const Split = () => {
     return (
         <>
-        <div className="split">
+        <div id="split">
             <span></span>
         </div>
         </>

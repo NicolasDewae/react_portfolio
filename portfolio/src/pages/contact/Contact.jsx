@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar';
 import ContactForm from '../../components/contactForm/ContactForm';
 import './Contact.css';
 import Split from '../../components/split/Split';
+import { contact } from "../../config/i18n";
 
 const Contact = () => {
     const [translate, setTranslate] = useState(false);
@@ -20,19 +21,28 @@ const Contact = () => {
                 </p>
             </button>
             <Navbar data={translate} />
-            <div>
-                <h1>Contact</h1>
-            </div>
-            <div className='contact'>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cum aspernatur quas atque eius rerum ratione, explicabo fuga ea accusamus odit, ab nobis officiis quos? Molestiae, aliquam saepe! Labore, ipsam.
-                    </p>
-                </div>
-                <div>
-                    <ContactForm data={translate} />
-                </div>
-            </div>
+                {contact.map((item) => {
+                    item = translate ? item.fr : item.en;
+                    return (
+                        item.map((item) => {
+                            return (
+                                <>
+                                    <div>
+                                        <h1>{item.title}</h1>
+                                    </div>
+                                    <div className='contact'>
+                                        <div>
+                                            <h2>{item.text}</h2>
+                                        </div>
+                                        <div>
+                                            <ContactForm data={translate} />
+                                        </div>
+                                    </div>
+                                </>
+                            )
+                        })
+                    )
+                })}
             <Split data={translate} />
             <Footer data={translate}/>
         </>
