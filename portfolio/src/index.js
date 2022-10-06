@@ -8,6 +8,7 @@ import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Article from './pages/article/Article';
 import Works from './pages/works/Works';
+import StreetView from './pages/project/streetView/StreetView';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
         <Route path="/works" element={ <Works /> } />
         <Route path="/contact" element={ <Contact /> } />
         <Route path="/blog/:id" element={ <Article /> } />
+        <Route path="/project/streetview" element={ <StreetView /> } />
       </Routes>
     </Router>
   </React.StrictMode>
