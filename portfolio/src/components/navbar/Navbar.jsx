@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { useState } from 'react';
-import { navLink } from '../../config/i18n';
+import { navLink, authorName } from '../../config/i18n';
 
 const Navbar = (translate) => {
     const [showLinks, setShowLinks] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = (translate) => {
         <>
             <div className="header">
                 <div className="title">
-                    <a href="/">First name Last name</a>
+                    <a href="/">{ authorName }</a>
                 </div>
                 <nav className={`nav ${showLinks ? "showNav" : "hideNav"}`}>
                     <ul className="links">
