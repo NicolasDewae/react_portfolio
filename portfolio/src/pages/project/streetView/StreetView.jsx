@@ -3,6 +3,7 @@ import "./StreetView.css";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import { streetview } from "../../../config/projectsData";
+import { projects } from "../../../config/i18n";
 
 const StreetView = () => {
     const [translate, setTranslate] = useState(false);
@@ -25,9 +26,18 @@ const StreetView = () => {
                     </div>
                     <div className="street-view__container__content">
                         <div className="street-view__container__content__text">
-                            <p>
-                                {streetview.description}
-                            </p>
+                            {projects.map((project) => {
+                                project = translate ? project.fr : project.en;
+                                return ( 
+                                    project.map((item) => {
+                                        return (
+                                            <p>
+                                                {item.streetview}
+                                            </p>
+                                        )
+                                    })
+                                )    
+                            })}
                         </div>
                         <div className="street-view__container__content__image">
                             {streetview.projectImages.map((picture) => {
