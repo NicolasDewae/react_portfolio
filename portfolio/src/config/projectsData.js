@@ -3,7 +3,6 @@ export const streetview = {
     pathway: 'streetview',
     title: 'Street View',
     picture: '/assets/img/streetview/Streetview-1.jpg',
-    description: 'Longue description du premier projet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl nunc consectetur nisi, eget consectetur nisi nisl eget consectetur nisi.',
     projectImages: [
         '/assets/img/streetview/Streetview-1.jpg',
         '/assets/img/streetview/Streetview-2.jpg',
@@ -47,6 +46,33 @@ export const streetview = {
     ]    
 }
 
+export const confinement = {
+    id: 2,
+    pathway: 'confinement',
+    title: 'Confinement',
+    picture: '/assets/img/confinement/Confinement-1.jpg',
+    projectImages: {
+        un: '/assets/img/confinement/confinement-1.jpg',
+        deux: '/assets/img/confinement/confinement-2.jpg',
+        trois: '/assets/img/confinement/confinement-3.jpg',
+        quatre: '/assets/img/confinement/confinement-4.jpg',
+        cinq: '/assets/img/confinement/confinement-5.jpg',
+        six: '/assets/img/confinement/confinement-6.jpg',
+        sept: '/assets/img/confinement/confinement-7.jpg',
+        huit: '/assets/img/confinement/confinement-8.jpg',
+        neuf: '/assets/img/confinement/confinement-9.jpg',
+        dix: '/assets/img/confinement/confinement-10.jpg',
+        onze: '/assets/img/confinement/confinement-11.jpg',
+        douze: '/assets/img/confinement/confinement-13.jpg',
+        treize: '/assets/img/confinement/confinement-14.jpg',
+        quatorze: '/assets/img/confinement/confinement-15.jpg',
+        quinze: '/assets/img/confinement/confinement-16.jpg',
+        seize: '/assets/img/confinement/confinement-18.jpg',
+        dixhuit: '/assets/img/confinement/confinement-20.jpg',
+        vingt: '/assets/img/confinement/confinement-22.jpg',
+        vingtun: '/assets/img/confinement/confinement-23.jpg',
+    }
+}
 
 const projectData = [
     {
@@ -54,27 +80,25 @@ const projectData = [
       pathway: 'streetview',
       title: 'Street View',
       picture: '/assets/img/streetview/Streetview-1.jpg',
-      description: 'Longue description du premier projet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl nunc consectetur nisi, eget consectetur nisi nisl eget consectetur nisi.',
       projectImages: [
-          '/assets/img/streetview/Streetview-1.jpg',
-          '/assets/img/streetview/Streetview-1.jpg',
-          '/assets/img/streetview/Streetview-1.jpg',
-          '/assets/img/streetview/Streetview-1.jpg',
-          '/assets/img/streetview/Streetview-1.jpg',
-      ]    
+        '/assets/img/streetview/Streetview-39.jpg',
+        '/assets/img/streetview/Streetview-41.jpg',
+        '/assets/img/streetview/Streetview-42.jpg',
+        '/assets/img/streetview/Streetview-43.jpg',
+        '/assets/img/streetview/Streetview-6.jpg'
+      ]  
     },
     {
         id: 2,
-        pathway: 'titreDeuxiemeProjet',
-        title: 'Titre du second projet',
-        picture: '/assets/img/streetview/Streetview-16.jpg',
-        description: 'Longue description du second projet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl nunc consectetur nisi, eget consectetur nisi nisl eget consectetur nisi.',
+        pathway: 'confinement',
+        title: 'Confinement',
+        picture: '/assets/img/confinement/confinement-8.jpg',
         projectImages: [
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
+            '/assets/img/confinement/confinement-1.jpg',
+            '/assets/img/confinement/confinement-2.jpg',
+            '/assets/img/confinement/confinement-3.jpg',
+            '/assets/img/confinement/confinement-4.jpg',
+            '/assets/img/confinement/confinement-5.jpg'
         ]
     },
     {
@@ -82,7 +106,6 @@ const projectData = [
         pathway: 'titreTroisiemeProjet',
         title: 'Titre du troisième projet',
         picture: '/assets/img/streetview/Streetview-9.jpg',
-        description: 'Longue description du troisième projet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl nunc consectetur nisi, eget consectetur nisi nisl eget consectetur nisi.',
         projectImages: [
             '/assets/img/streetview/Streetview-1.jpg',
             '/assets/img/streetview/Streetview-1.jpg',
@@ -96,7 +119,6 @@ const projectData = [
         pathway: 'titreQuatriemeProjet',
         title: 'Titre du quatrième projet',
         picture: '/assets/img/streetview/Streetview-33.jpg',
-        description: 'Longue description du quatrième projet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl nunc consectetur nisi, eget consectetur nisi nisl eget consectetur nisi.',
         projectImages: [
             '/assets/img/streetview/Streetview-1.jpg',
             '/assets/img/streetview/Streetview-1.jpg',

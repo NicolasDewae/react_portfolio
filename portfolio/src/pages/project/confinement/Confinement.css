@@ -1,0 +1,16 @@
+.confinement img {
+    margin: 25px 10px;
+}
+
+.confinement_container_content_image .single, .pair {
+    justify-content: center;
+    display: flex;
+}
+
+.confinement_container_content_image .single img {
+    width: 100%;
+}
+
+.confinement_container_content_image .pair img {
+    width: 49%;
+}
