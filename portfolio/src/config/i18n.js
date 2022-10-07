@@ -157,3 +157,28 @@ export const contact = [
         ],
     }
 ]
+
+export const projects = [
+    {
+        fr: [
+                {
+                    id: 1,
+                    streetview: 'Street View est une série de photographies réalisées dans les rues de Bruxelles. Le but de cette série est de mettre en avant les éléments ordinaires de la vie quotidienne.'
+                },
+                {
+                    id: 2,
+                    confinement: 'Confinement est une série de photographies réalisées pendant le confinement de mars 2020.'
+                }
+        ],
+        en: [
+                {
+                    id: 1,
+                    streetview: 'Street View is a series of photographs taken in the streets of Brussels. The purpose of this series is to highlight the ordinary elements of daily life.'
+                },
+                {
+                    id: 2,
+                    confinement: 'Confinement is a series of photographs taken during the confinement of March 2020.'
+                }
+        ],
+    }
+]
