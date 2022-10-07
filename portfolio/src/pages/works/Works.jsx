@@ -34,10 +34,10 @@ const Works = () => {
             <div className="work-list">
                 <div className="carousel">
                     <Carousel 
-                        picture1={projectsData[0].picture} 
-                        picture2={projectsData[1].picture} 
-                        picture3={projectsData[2].picture}
-                        picture4={projectsData[3].picture} 
+                        picture1={projectsData[0].projectImages[0]} 
+                        picture2={projectsData[0].projectImages[1]} 
+                        picture3={projectsData[0].projectImages[2]}
+                        picture4={projectsData[0].projectImages[3]} 
                     />
                     <div className="column">
                         <div>
