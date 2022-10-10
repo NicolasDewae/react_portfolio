@@ -8,19 +8,25 @@ import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Article from './pages/article/Article';
 import Works from './pages/works/Works';
-
+import StreetView from './pages/project/streetView/StreetView';
+import Confinement from './pages/project/confinement/Confinement';
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Routes>
-        <Route path="/" element={ <App /> } />
-        <Route path="/about" element={ <About /> } />
-        <Route path="/works" element={ <Works /> } />
-        <Route path="/contact" element={ <Contact /> } />
-        <Route path="/blog/:id" element={ <Article /> } />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={ <App /> } />
+          <Route path="/about" element={ <About /> } />
+          <Route path="/works" element={ <Works /> } />
+          <Route path="/contact" element={ <Contact /> } />
+          <Route path="/blog/:id" element={ <Article /> } />
+          <Route path="/project/streetview" element={ <StreetView /> } />
+          <Route path="project/confinement" element={ <Confinement /> } />
+        </Routes>
+      </ScrollToTop>
     </Router>
   </React.StrictMode>
 );

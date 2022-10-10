@@ -25,26 +25,26 @@ export const navLink = [
                 }
         ],
         en: [
-            {
-                id: 1,
-                title: 'Home',
-                pathway: '/',
-            },
-            {
-                id: 2,
-                title: 'Works',
-                pathway: '/works',
-            },
-            {
-                id: 3,
-                title: 'About',
-                pathway: '/about',
-            },
-            {
-                id: 4,
-                title: 'Contact',
-                pathway: '/contact',
-            }
+                {
+                    id: 1,
+                    title: 'Home',
+                    pathway: '/',
+                },
+                {
+                    id: 2,
+                    title: 'Works',
+                    pathway: '/works',
+                },
+                {
+                    id: 3,
+                    title: 'About',
+                    pathway: '/about',
+                },
+                {
+                    id: 4,
+                    title: 'Contact',
+                    pathway: '/contact',
+                }
         ],
     }
 ]
@@ -54,14 +54,14 @@ export const mainContent = [
         fr: [
                 {
                     id: 1,
-                    message: 'Je suis un développeur web, spécialisé dans le développement front-end.',
+                    message: 'Mettre l\'ordinaire au premier plan.',
                 }
         ],
         en: [
-            {
-                id: 1,
-                message: 'I am a web developer, I am passionate about web development and I am looking for a job.',
-            }
+                {
+                    id: 1,
+                    message: 'Put the ordinary in the foreground.',
+                }
         ],
     }
 ]
@@ -112,7 +112,7 @@ export const footer = [
                     button: "S'inscrire",
                     copyright: '© 2022 - Développé par ' + authorName,
                     contextTitle: "Contexte de ce portfolio",
-                    contextMessage: "Cette application a été développée par moi-même, "+ authorName +", étudiant en développement web. Elle a été réalisée dans le but de présenter à la fois mon travail photographique et mes compétences en ReactJs. Je me suis fortement inspiré du site du photographe André D.Wagner, dont j'apprécie le travail. Je vous invite à visiter son site en cliquant sur le lien.",
+                    contextMessage: "Cette application a été développée par moi-même, "+ authorName +", étudiant en développement web. Elle a été réalisée dans le but de présenter mon travail photographique ainsi que mes compétences en ReactJs. Je me suis fortement inspiré du site du photographe André D.Wagner, dont j'apprécie le travail. Je vous invite à visiter son site en cliquant sur le lien.",
                 }
         ],
         en: [
@@ -153,6 +153,31 @@ export const contact = [
                     email: 'Email',
                     message: 'Message',
                     button: 'Send',
+                }
+        ],
+    }
+]
+
+export const projects = [
+    {
+        fr: [
+                {
+                    id: 1,
+                    streetview: 'Street View est une série de photographies réalisées dans les rues de Bruxelles. Le but de cette série est de mettre en avant les éléments ordinaires de la vie quotidienne.'
+                },
+                {
+                    id: 2,
+                    confinement: 'Confinement est une série de photographies réalisées pendant le confinement de mars 2020.'
+                }
+        ],
+        en: [
+                {
+                    id: 1,
+                    streetview: 'Street View is a series of photographs taken in the streets of Brussels. The purpose of this series is to highlight the ordinary elements of daily life.'
+                },
+                {
+                    id: 2,
+                    confinement: 'Confinement is a series of photographs taken during the confinement of March 2020.'
                 }
         ],
     }

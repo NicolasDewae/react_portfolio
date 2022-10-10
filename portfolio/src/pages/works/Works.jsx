@@ -9,6 +9,7 @@ import Carousel from "../../components/carousel/Carousel";
 import Split from "../../components/split/Split";
 import Main from "../../components/main/Main";
 import { previewProject } from "../../config/i18n";
+import ScrollToTopBtn from "../../components/scrollToTopBtn/ScrollToTopBtn";
 
 const Works = () => {
     const [translate, setTranslate] = useState(false);
@@ -34,10 +35,10 @@ const Works = () => {
             <div className="work-list">
                 <div className="carousel">
                     <Carousel 
-                        picture1={projectsData[0].picture} 
-                        picture2={projectsData[1].picture} 
-                        picture3={projectsData[2].picture}
-                        picture4={projectsData[3].picture} 
+                        picture1={projectsData[0].projectImages[0]} 
+                        picture2={projectsData[0].projectImages[1]} 
+                        picture3={projectsData[0].projectImages[2]}
+                        picture4={projectsData[0].projectImages[3]} 
                     />
                     <div className="column">
                         <div>
@@ -69,6 +70,7 @@ const Works = () => {
                 <CardProject pathway={projectsData[3].pathway} title={projectsData[3].title} picture={projectsData[3].picture} />
             </div>
             <Split />
+            <ScrollToTopBtn />
             <Footer data={translate} />
         </>
     );
