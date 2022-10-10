@@ -5,6 +5,7 @@ import './Article.css';
 import blogBata from '../../config/blogData';
 import { useParams } from 'react-router-dom';
 import Split from '../../components/split/Split';
+import ScrollToTopBtn from '../../components/scrollToTopBtn/ScrollToTopBtn';
 
 const Article = () => {
 
@@ -51,6 +52,7 @@ const Article = () => {
             ) : (
                 <Split />
             )}
+            <ScrollToTopBtn />
             <Footer data={translate}/>
         </>
     );

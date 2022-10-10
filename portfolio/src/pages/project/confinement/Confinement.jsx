@@ -4,6 +4,7 @@ import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import { confinement } from "../../../config/projectsData";
 import { projects } from "../../../config/i18n";
+import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 
 const Confinement = () => {
     const [translate, setTranslate] = useState(false);
@@ -92,7 +93,7 @@ const Confinement = () => {
                     </div>
                 </div>
             </div>
-
+            <ScrollToTopBtn />
             <Footer data={translate} />
         </>
     );

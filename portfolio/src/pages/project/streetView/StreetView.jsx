@@ -4,6 +4,7 @@ import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import { streetview } from "../../../config/projectsData";
 import { projects } from "../../../config/i18n";
+import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 
 const StreetView = () => {
     const [translate, setTranslate] = useState(false);
@@ -51,7 +52,7 @@ const StreetView = () => {
                     </div>
                 </div>
             </div>
-
+            <ScrollToTopBtn />
             <Footer data={translate} />
         </>
     );

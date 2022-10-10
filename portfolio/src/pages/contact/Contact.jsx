@@ -5,6 +5,7 @@ import ContactForm from '../../components/contactForm/ContactForm';
 import './Contact.css';
 import Split from '../../components/split/Split';
 import { contact } from "../../config/i18n";
+import ScrollToTopBtn from '../../components/scrollToTopBtn/ScrollToTopBtn';
 
 const Contact = () => {
     const [translate, setTranslate] = useState(false);
@@ -44,6 +45,7 @@ const Contact = () => {
                     )
                 })}
             <Split data={translate} />
+            <ScrollToTopBtn />
             <Footer data={translate}/>
         </>
     );
