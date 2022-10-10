@@ -1,0 +1,13 @@
+.scroll {
+    border: none;
+    position: fixed;
+    top: 90%;
+    right: 88%;
+    background-color: transparent;
+  }
+  
+  .scroll:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+  }
