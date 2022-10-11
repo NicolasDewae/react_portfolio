@@ -43,13 +43,13 @@ const Footer = (translate) => {
                                                     <h3>{item.copyright}</h3>
                                                 </div>
                                                 <div className='icons'>
-                                                    <a href="#">
+                                                    <a href="https://www.instagram.com/nicolasdwphoto/" target="_blank">
                                                         <FontAwesomeIcon icon={faInstagram} />
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="https://github.com/NicolasDewae" target="_blank">
                                                         <FontAwesomeIcon icon={faGithub} />
                                                     </a>
-                                                    <a href="#">
+                                                    <a href="https://www.linkedin.com/in/nicolas-de-waegenaere-959209232/" target="_blank">
                                                         <FontAwesomeIcon icon={faLinkedin} />
                                                     </a>
                                                 </div>
