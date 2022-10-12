@@ -74,6 +74,50 @@ export const confinement = {
     }
 }
 
+export const canaries = {
+    id: 3,
+    pathway: 'canaries',
+    title: 'Canaries',
+    picture: '/assets/img/canaries/Canaries-11.jpg',
+    projectImages: {
+        un: '/assets/img/canaries/Canaries-1.jpg',
+        deux: '/assets/img/canaries/Canaries-2.jpg',
+        trois: '/assets/img/canaries/Canaries-3.jpg',
+        quatre: '/assets/img/canaries/Canaries-4.jpg',
+        cinq: '/assets/img/canaries/Canaries-5.jpg',
+        six: '/assets/img/canaries/Canaries-6.jpg',
+        huit: '/assets/img/canaries/Canaries-8.jpg',
+        neuf: '/assets/img/canaries/Canaries-9.jpg',
+        dix: '/assets/img/canaries/Canaries-10.jpg',
+        onze: '/assets/img/canaries/Canaries-11.jpg',
+        douze: '/assets/img/canaries/Canaries-12.jpg',
+        treize: '/assets/img/canaries/Canaries-13.jpg',
+    }
+}
+
+export const street = {
+    id: 4,
+    pathway: 'street',
+    title: 'Street',
+    picture: '/assets/img/street/Street-1.jpg',
+    projectImages: {
+        un: '/assets/img/street/Street-1.jpg',
+        deux: '/assets/img/street/Street-2.jpg',
+        trois: '/assets/img/street/Street-3.jpg',
+        quatre: '/assets/img/street/Street-4.jpg',
+        cinq: '/assets/img/street/Street-5.jpg',
+        six: '/assets/img/street/Street-6.jpg',
+        sept: '/assets/img/street/Street-7.jpg',
+        huit: '/assets/img/street/Street-8.jpg',
+        neuf: '/assets/img/street/Street-9.jpg',
+        dix: '/assets/img/street/Street-10.jpg',
+        onze: '/assets/img/street/Street-11.jpg',
+        douze: '/assets/img/street/Street-12.jpg',
+        treize: '/assets/img/street/Street-13.jpg',
+        quatorze: '/assets/img/street/Street-14.jpg',
+    }
+}
+
 const projectData = [
     {
       id: 1,
@@ -103,28 +147,28 @@ const projectData = [
     },
     {
         id: 3,
-        pathway: 'titreTroisiemeProjet',
-        title: 'Titre du troisième projet',
-        picture: '/assets/img/streetview/Streetview-9.jpg',
+        pathway: 'street',
+        title: 'Street',
+        picture: '/assets/img/street/Street-13.jpg',
         projectImages: [
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
+            '/assets/img/street/Street-1.jpg',
+            '/assets/img/street/Street-2.jpg',
+            '/assets/img/street/Street-3.jpg',
+            '/assets/img/street/Street-4.jpg',
+            '/assets/img/street/Street-5.jpg',
         ]
     },
     {
         id: 4,
-        pathway: 'titreQuatriemeProjet',
-        title: 'Titre du quatrième projet',
-        picture: '/assets/img/streetview/Streetview-33.jpg',
+        pathway: 'canaries',
+        title: 'Canaries',
+        picture: '/assets/img/canaries/Canaries-11.jpg',
         projectImages: [
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/img/streetview/Streetview-1.jpg',
-            '/assets/imgTemplate/370x490.png',
+            '/assets/img/canaries/Canaries-1.jpg',
+            '/assets/img/canaries/Canaries-2.jpg',
+            '/assets/img/canaries/Canaries-3.jpg',
+            '/assets/img/canaries/Canaries-4.jpg',
+            '/assets/img/canaries/Canaries-5.jpg',
         ]
     },
 ]
