@@ -1,5 +1,4 @@
 // translate var -> true = fr, false = en
-//test 
 
 export const authorName = "Nicolas De waegenaere";
 
