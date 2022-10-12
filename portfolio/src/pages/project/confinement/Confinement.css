@@ -14,3 +14,15 @@
 .confinement_container_content_image .pair img {
     width: 49%;
 }
+
+@media screen and (max-width: 1000px) {
+    .confinement_container_content_image .single, .pair {
+        display: block;
+        width: 100%;
+    }
+
+    .confinement_container_content_image .pair img {
+        justify-content: center;
+        width: 100%;
+    }
+}
