@@ -1,0 +1,28 @@
+.canaries img {
+    margin: 25px 10px;
+}
+
+.canaries_container_content_image .single, .pair {
+    justify-content: center;
+    display: flex;
+}
+
+.canaries_container_content_image .single img {
+    width: 100%;
+}
+
+.canaries_container_content_image .pair img {
+    width: 49%;
+}
+
+@media screen and (max-width: 1000px) {
+    .canaries_container_content_image .single, .pair {
+        display: block;
+        width: 100%;
+    }
+
+    .canaries_container_content_image .pair img {
+        justify-content: center;
+        width: 100%;
+    }
+}
