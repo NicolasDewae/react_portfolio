@@ -51,7 +51,6 @@ nav ul {
         margin: 0;
         padding: 2rem;
         background-color: black;
-        z-index: 1;
     }
 
     .header .links li a {
@@ -62,7 +61,9 @@ nav ul {
 
     .header .burger {
         display: block;
-        margin: 20px 0 0 400px;
+        position: fixed;
+        top: 1rem;
+        right: 1.5rem;
     }
 
     .header .burger:hover {
@@ -111,17 +112,17 @@ nav ul {
         display: block;
         width: 40px;
         height: 3px;
-        position: fixed;
+        position: relative;
         border-radius: 3px;
         background-color: white;
         transition: all .5s ease-in;
-        z-index: 1;
     }
 
     .header .showNav .burger .burger_line::before,
     .header .showNav .burger .burger_line::after {
         content: '';
         position: absolute;
+        left: 0;
     }
 
     .header .showNav .burger .burger_line::before {
