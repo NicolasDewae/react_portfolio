@@ -10,6 +10,8 @@ import Article from './pages/article/Article';
 import Works from './pages/works/Works';
 import StreetView from './pages/project/streetView/StreetView';
 import Confinement from './pages/project/confinement/Confinement';
+import Canaries from './pages/project/canaries/Canaries';
+import Street from './pages/project/street/Street';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,7 +26,9 @@ root.render(
           <Route path="/contact" element={ <Contact /> } />
           <Route path="/blog/:id" element={ <Article /> } />
           <Route path="/project/streetview" element={ <StreetView /> } />
-          <Route path="project/confinement" element={ <Confinement /> } />
+          <Route path="/project/confinement" element={ <Confinement /> } />
+          <Route path="/project/canaries" element={ <Canaries /> } />
+          <Route path="/project/street" element={ <Street /> } />
         </Routes>
       </ScrollToTop>
     </Router>
