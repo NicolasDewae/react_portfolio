@@ -37,7 +37,16 @@ REACT_APP_MY_EMAIL = your email
 </p>
 
 ### Images
-I don't push images in git, so you'll have to go to src -> config -> projectsData.js and customize the "picture" field and the "projectImages" array in each object present before build with '/assets/imgTemplate/1000x750.png' or '/assets/imgTemplate/370x490.png' 
+I don't push images in git, so you'll have to go to src -> config -> projectsData.js and customize the "picture" field and the "projectImages" array in each object present before build with
+
+```
+'/assets/imgTemplate/1000x750.png'
+```
+or
+
+```
+'/assets/imgTemplate/370x490.png'
+``` 
 
 
 ### HomePage
