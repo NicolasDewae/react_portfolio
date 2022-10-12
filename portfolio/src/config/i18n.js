@@ -1,5 +1,5 @@
 // translate var -> true = fr, false = en
-
+//git test
 export const authorName = "Nicolas De waegenaere";
 
 export const navLink = [
