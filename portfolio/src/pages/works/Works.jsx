@@ -12,10 +12,18 @@ import { previewProject } from "../../config/i18n";
 import ScrollToTopBtn from "../../components/scrollToTopBtn/ScrollToTopBtn";
 
 const Works = () => {
-    const [translate, setTranslate] = useState(false);
+
+    // Get translate data
+    let defaultValueTranslate = localStorage.getItem('defaultValueTranslate');
+    // Convert translate data into a boolean
+    defaultValueTranslate = defaultValueTranslate === "false" ? false : true;
+    console.log(defaultValueTranslate);
+    const [translate, setTranslate] = useState(defaultValueTranslate);
     const handleTranslate = () => {
+        localStorage.setItem('defaultValueTranslate', !translate);  
         setTranslate(!translate);
     }
+
     return (
         <>
             {/* Translation button */}
