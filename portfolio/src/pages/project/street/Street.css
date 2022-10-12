@@ -1,0 +1,28 @@
+.street img {
+    margin: 25px 10px;
+}
+
+.street_container_content_image .single, .pair {
+    justify-content: center;
+    display: flex;
+}
+
+.street_container_content_image .single img {
+    width: 100%;
+}
+
+.street_container_content_image .pair img {
+    width: 49%;
+}
+
+@media screen and (max-width: 1000px) {
+    .street_container_content_image .single, .pair {
+        display: block;
+        width: 100%;
+    }
+
+    .street_container_content_image .pair img {
+        justify-content: center;
+        width: 100%;
+    }
+}
