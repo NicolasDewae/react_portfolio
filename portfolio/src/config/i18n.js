@@ -170,6 +170,14 @@ export const projects = [
                 {
                     id: 2,
                     confinement: 'Confinement est une série de photographies réalisées pendant le confinement de mars 2020.'
+                },
+                {
+                    id: 3,
+                    street: 'Street est une série de photographies réalisées dans les rues de Bruxelles. Le but de cette série est de mettre en avant les éléments ordinaires de la vie quotidienne.'
+                },
+                {
+                    id: 4,
+                    canaries: 'Les Canaries est une série de photographies réalisées lors d\'un voyage aux Canaries.'
                 }
         ],
         en: [
@@ -180,6 +188,14 @@ export const projects = [
                 {
                     id: 2,
                     confinement: 'Confinement is a series of photographs taken during the confinement of March 2020.'
+                },
+                {
+                    id: 3,
+                    street: 'Street is a series of photographs taken in the streets of Brussels. The purpose of this series is to highlight the ordinary elements of daily life.'
+                },
+                {
+                    id: 4,
+                    canaries: 'The Canaries is a series of photographs taken during a trip to the Canary Islands.'
                 }
         ],
     }
