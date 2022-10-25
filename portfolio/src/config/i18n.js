@@ -91,14 +91,14 @@ export const about = [
                 {
                     id: 1,
                     title: 'A propos',
-                    message: 'Je suis un développeur web, spécialisé dans le développement front-end. Je suis passionné par le développement web et je suis à la recherche d\'un emploi.',
+                    message: 'Je réunis deux grandes passion, le développement web et la photographie. Ce portfolio est la pour me permettre de présenter les deux.',
                 }
         ],
         en: [
                 {
                     id: 1,
                     title: 'About',
-                    message: 'I am a web developer, I am passionate about web development and I am looking for a job.',
+                    message: 'I bring together two great passions, web development and photography. This portfolio is here to allow me to present both.',
                 }
         ],
     }
@@ -165,11 +165,11 @@ export const projects = [
         fr: [
                 {
                     id: 1,
-                    streetview: 'Street View est une série de photographies réalisées dans les rues de Bruxelles. Le but de cette série est de mettre en avant les éléments ordinaires de la vie quotidienne.'
+                    streetview: 'Street view est une série photographique qui a démarré pendant le confinement. Le but premier était de repérer des lieux à photographier une fois notre liberté de déplacement retrouvée. Mais lors de mes visites virtuelles, j\ai commencé à capturer les scènes qui me marquaient et étant inspiré par le travail de Doug Rickard et Jon Rafman, j\'ai commencé à créer des images à partir de ces scènes.',
                 },
                 {
                     id: 2,
-                    confinement: 'Confinement est une série de photographies réalisées pendant le confinement de mars 2020.'
+                    confinement: 'Dans cette série nommée très simplement "Confinement", j\'ai voulu témoigner de celui-ci tel que je l\'ai vécu'
                 },
                 {
                     id: 3,
@@ -183,11 +183,11 @@ export const projects = [
         en: [
                 {
                     id: 1,
-                    streetview: 'Street View is a series of photographs taken in the streets of Brussels. The purpose of this series is to highlight the ordinary elements of daily life.'
+                    streetview: 'Street view is a photographic series that started during the lockdown. The main goal was to identify places to photograph once our freedom of movement was restored. But during my virtual visits, I started to capture the scenes that marked me and being inspired by the work of Doug Rickard and Jon Rafman, I started to create images from these scenes.',
                 },
                 {
                     id: 2,
-                    confinement: 'Confinement is a series of photographs taken during the confinement of March 2020.'
+                    confinement: 'In this series simply named "Confinement", I wanted to testify to it as I experienced it'
                 },
                 {
                     id: 3,
