@@ -173,11 +173,11 @@ export const projects = [
                 },
                 {
                     id: 3,
-                    street: 'Street est une série de photographies réalisées dans les rues de Bruxelles. Le but de cette série est de mettre en avant les éléments ordinaires de la vie quotidienne.'
+                    street: 'Du béton, du béton et encore du béton.'
                 },
                 {
                     id: 4,
-                    canaries: 'Les Canaries est une série de photographies réalisées lors d\'un voyage aux Canaries.'
+                    canaries: 'Série de photographique réalisée lors d\'un voyage sur l\'île de Tenerife aux Canaries.'
                 }
         ],
         en: [
@@ -191,11 +191,11 @@ export const projects = [
                 },
                 {
                     id: 3,
-                    street: 'Street is a series of photographs taken in the streets of Brussels. The purpose of this series is to highlight the ordinary elements of daily life.'
+                    street: 'Concrete, concrete and concrete again.'
                 },
                 {
                     id: 4,
-                    canaries: 'The Canaries is a series of photographs taken during a trip to the Canary Islands.'
+                    canaries: 'Photographic series made during a trip to the island of Tenerife in the Canary Islands.'
                 }
         ],
     }
