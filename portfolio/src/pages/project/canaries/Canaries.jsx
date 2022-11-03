@@ -50,28 +50,28 @@ const Canaries = () => {
                         </div>
                         <div className="canaries_container_content_image">
                             <div className="pair">
-                                <img src={canaries.projectImages.un} alt="canaries" />
-                                <img src={canaries.projectImages.deux} alt="canaries" />
+                                <img src={canaries.projectImages.un.image} alt={canaries.projectImages.un.alt} />
+                                <img src={canaries.projectImages.deux.image} alt={canaries.projectImages.deux.alt} />
                             </div>
                             <div className="pair">
-                                <img src={canaries.projectImages.six} alt="canaries" />
-                                <img src={canaries.projectImages.cinq} alt="canaries" />
+                                <img src={canaries.projectImages.six.image} alt={canaries.projectImages.six.alt} />
+                                <img src={canaries.projectImages.cinq.image} alt={canaries.projectImages.cinq.alt} />
                             </div>
                             <div className="pair">
-                                <img src={canaries.projectImages.trois} alt="canaries" />
-                                <img src={canaries.projectImages.quatre} alt="canaries" />
-                                <img src={canaries.projectImages.neuf} alt="canaries" />
+                                <img src={canaries.projectImages.trois.image} alt={canaries.projectImages.trois.alt} />
+                                <img src={canaries.projectImages.quatre.image} alt={canaries.projectImages.quatre.alt} />
+                                <img src={canaries.projectImages.neuf.image} alt={canaries.projectImages.neuf.alt} />
                             </div>
                             <div className="pair">
-                                <img src={canaries.projectImages.huit} alt="canaries" />
-                                <img src={canaries.projectImages.dix} alt="canaries" />
+                                <img src={canaries.projectImages.huit.image} alt={canaries.projectImages.huit.alt} />
+                                <img src={canaries.projectImages.dix.image} alt={canaries.projectImages.dix.alt} />
                             </div>
                             <div className="single">
-                                <img src={canaries.projectImages.douze} alt="canaries" />
+                                <img src={canaries.projectImages.douze.image} alt={canaries.projectImages.douze.alt} />
                             </div>
                             <div className="pair">
-                                <img src={canaries.projectImages.onze} alt="canaries" />
-                                <img src={canaries.projectImages.treize} alt="canaries" />
+                                <img src={canaries.projectImages.onze.image} alt={canaries.projectImages.onze.alt} />
+                                <img src={canaries.projectImages.treize.image} alt={canaries.projectImages.treize.alt} />
                             </div>
                         </div>
                     </div>
