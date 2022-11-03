@@ -52,7 +52,7 @@ const StreetView = () => {
                             {streetview.projectImages.map((picture) => {
                                 return (
                                     <div key={picture}>
-                                        <img src={picture} alt="street view" />
+                                        <img src={picture.image} alt={picture.alt} />
                                     </div>
                                 )
                             })}
