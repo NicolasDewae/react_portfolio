@@ -51,50 +51,50 @@ const Confinement = () => {
                         <div className="confinement_container_content_image">
                             {/* inside */}
                             <div className="single">
-                                <img src={confinement.projectImages.un} alt="confinement" />
+                                <img src={confinement.projectImages.un.image} alt={confinement.projectImages.un.alt} />
                             </div>
                             <div className="single">
-                                <img src={confinement.projectImages.seize} alt="confinement" />
+                                <img src={confinement.projectImages.seize.image} alt={confinement.projectImages.seize.alt} />
                             </div>
                             <div className="pair">
-                                <img src={confinement.projectImages.deux} alt="confinement" />
-                                <img src={confinement.projectImages.trois} alt="confinement" />
+                                <img src={confinement.projectImages.deux.image} alt={confinement.projectImages.deux.alt} />
+                                <img src={confinement.projectImages.trois.image} alt={confinement.projectImages.trois.alt} />
                             </div>
                             <div className="pair">
-                                <img src={confinement.projectImages.quatre} alt="confinement" />
-                                <img src={confinement.projectImages.six} alt="confinement" />
+                                <img src={confinement.projectImages.quatre.image} alt={confinement.projectImages.quatre.alt} />
+                                <img src={confinement.projectImages.six.image} alt={confinement.projectImages.six.alt} />
                             </div>
                             <div className="single">
-                                <img src={confinement.projectImages.vingt} alt="confinement" />
+                                <img src={confinement.projectImages.vingt.image} alt={confinement.projectImages.vingt.alt} />
                             </div>
                             <div className="pair">
-                                <img src={confinement.projectImages.sept} alt="confinement" />
-                                <img src={confinement.projectImages.dix} alt="confinement" />
+                                <img src={confinement.projectImages.sept.image} alt={confinement.projectImages.sept.alt} />
+                                <img src={confinement.projectImages.dix.image} alt={confinement.projectImages.dix.alt} />
                             </div>
                             <div className="pair">
-                                <img src={confinement.projectImages.cinq} alt="confinement" />
-                                <img src={confinement.projectImages.neuf} alt="confinement" />
+                                <img src={confinement.projectImages.cinq.image} alt={confinement.projectImages.cinq.alt} />
+                                <img src={confinement.projectImages.neuf.image} alt={confinement.projectImages.neuf.alt} />
                             </div>
                             {/* outside */}
                             <div className="single">
-                                <img src={confinement.projectImages.huit} alt="confinement" />
+                                <img src={confinement.projectImages.huit.image} alt={confinement.projectImages.huit.alt} />
                             </div>
                             <div className="pair">
-                                <img src={confinement.projectImages.quatorze} alt="confinement" />
-                                <img src={confinement.projectImages.quinze} alt="confinement" />
+                                <img src={confinement.projectImages.quatorze.image} alt={confinement.projectImages.quatorze.alt} />
+                                <img src={confinement.projectImages.quinze.image} alt={confinement.projectImages.quinze.alt} />
                             </div>
                             <div className="single">
-                                <img src={confinement.projectImages.douze} alt="confinement" />
+                                <img src={confinement.projectImages.douze.image} alt={confinement.projectImages.douze.alt} />
                             </div>
                             <div className="pair">
-                                <img src={confinement.projectImages.onze} alt="confinement" />
-                                <img src={confinement.projectImages.vingtun} alt="confinement" />
+                                <img src={confinement.projectImages.onze.image} alt={confinement.projectImages.onze.alt} />
+                                <img src={confinement.projectImages.vingtun.image} alt={confinement.projectImages.vingtun.alt} />
                             </div>
                             <div className="single">
-                                <img src={confinement.projectImages.treize} alt="confinement" />
+                                <img src={confinement.projectImages.treize.image} alt={confinement.projectImages.treize.alt} />
                             </div>
                             <div className="single">
-                                <img src={confinement.projectImages.dixhuit} alt="confinement" />
+                                <img src={confinement.projectImages.dixhuit.image} alt={confinement.projectImages.dixhuit.alt} />
                             </div>
                         </div>
                     </div>
