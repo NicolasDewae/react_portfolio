@@ -256,51 +256,51 @@ export const canaries = {
     projectImages: {
         un: {
             image: '/assets/img/canaries/Canaries-1.jpg',
-            alt: 'Canaries',
+            alt: 'Moto garés devant un mur bleu et blanc à Ténérife',
         },
         deux: {
             image: '/assets/img/canaries/Canaries-2.jpg',
-            alt: 'Canaries',
+            alt: 'Voitures sous une bache bleu devant un mur de même couleur à Ténérife',
         },
         trois: {
             image: '/assets/img/canaries/Canaries-3.jpg',
-            alt: 'Canaries',
+            alt: 'Surfeur se rendant à la plage dans le nord de Ténérife',
         },
         quatre: {
             image: '/assets/img/canaries/Canaries-4.jpg',
-            alt: 'Canaries',
+            alt: 'Chats allongés sous une voiture près de la plage dans les iles Canaries',
         },
         cinq: {
             image: '/assets/img/canaries/Canaries-5.jpg',
-            alt: 'Canaries',
+            alt: 'Porte numéro 23 à moitié cachée derrière le mur des escaliers dans un village des iles Canaries',
         },
         six: {
             image: '/assets/img/canaries/Canaries-6.jpg',
-            alt: 'Canaries',
+            alt: 'Femme passant le balai dans les escaliers d\'un immeuble à Ténérife, se tenue bleu contraste avec les murs rouges et oranges',
         },
         huit: {
             image: '/assets/img/canaries/Canaries-8.jpg',
-            alt: 'Canaries',
+            alt: 'Quartier aux maison bleus dans un village des iles Canaries, lors du coucher de soleil',
         },
         neuf: {
             image: '/assets/img/canaries/Canaries-9.jpg',
-            alt: 'Canaries',
+            alt: 'Pigeon prenant un bain de soleil sur la sol dans les rues du centre de Santa cruz de Ténérife',
         },
         dix: {
             image: '/assets/img/canaries/Canaries-10.jpg',
-            alt: 'Canaries',
+            alt: 'Homme avec une béquille et une jambe en moins sortant d\'une voiture bleu',
         },
         onze: {
             image: '/assets/img/canaries/Canaries-11.jpg',
-            alt: 'Canaries',
+            alt: 'Femme marchant dans la rue prenant la même posture que la statue derrière elle. Panneau stop en premier plan',
         },
         douze: {
             image: '/assets/img/canaries/Canaries-12.jpg',
-            alt: 'Canaries',
+            alt: 'Femmes se saluant à la térrasse du café du village, les montagnes en arrière plan',
         },
         treize: {
             image: '/assets/img/canaries/Canaries-13.jpg',
-            alt: 'Canaries',
+            alt: 'Voiture de marque mercedes garée dans une allée, elle est coupée en deux par l\'ombre du batiment voisin',
         }
     }
 }
@@ -313,59 +313,59 @@ export const street = {
     projectImages: {
         un: {
             image: '/assets/img/street/Street-1.jpg',
-            alt: 'Street',
+            alt: 'Time Square à New York, USA, ambulance passent devant des femmes en tenue de soirée',
         },
         deux: {
             image: '/assets/img/street/Street-2.jpg',
-            alt: 'Street',
+            alt: 'Vue en plongé d\'un groupe d\'homme sur le toit d\'un parking. La photo rappelle celle de René Burri prise à Sao Paulo en 1960',
         },
         trois: {
             image: '/assets/img/street/Street-3.jpg',
-            alt: 'Street',
+            alt: 'Homme attendant seul dans la foule à Montréal',
         },
         quatre: {
             image: '/assets/img/street/Street-4.jpg',
-            alt: 'Street',
+            alt: 'Une homme et une femme se regarde dans les yeux au moment de traverser dans une rue de Londres',
         },
         cinq: {
             image: '/assets/img/street/Street-5.jpg',
-            alt: 'Street',
+            alt: 'Marchant de journaux polonais attendant les clients',
         },
         six: {
             image: '/assets/img/street/Street-6.jpg',
-            alt: 'Street',
+            alt: 'Plusieurs personnes de tous ages marchant dans la rue, il y a de nombreux rappels de rouges',
         },
         sept: {
             image: '/assets/img/street/Street-7.jpg',
-            alt: 'Street',
+            alt: 'Homme avec un chapeau melon rentrant des courses à Paris',
         },
         huit: {
             image: '/assets/img/street/Street-8.jpg',
-            alt: 'Street',
+            alt: 'Homme à vélo passe dans le trafic des rues de Paris, une guitare sur le dos',
         },
         neuf: {
             image: '/assets/img/street/Street-9.jpg',
-            alt: 'Street',
+            alt: 'Femme à Paris raccompagnant ses enfants',
         },
         dix: {
             image: '/assets/img/street/Street-10.jpg',
-            alt: 'Street',
+            alt: 'Photo de rue d\'une femme en vélo à Paris',
         },
         onze: {
             image: '/assets/img/street/Street-11.jpg',
-            alt: 'Street',
+            alt: 'Femme se faisant emmêler avec la laisse de son chien par se dernier, pendant la promenade dans les rues de Paris',
         },
         douze: {
             image: '/assets/img/street/Street-12.jpg',
-            alt: 'Street',
+            alt: 'Homme portant un t-shirt avec la tour eiffel imprimée à l\'envers, dans les rues de Paris',
         },
         treize: {
             image: '/assets/img/street/Street-13.jpg',
-            alt: 'Street',
+            alt: 'Homme, la cinquantaine, avec un porte document à la main et un cigare à la bouche, regardant vers le ciel',
         },
         quatorze: {
             image: '/assets/img/street/Street-14.jpg',
-            alt: 'Street',
+            alt: 'Palette seule sur le trottoir à Paris',
         }
     }
 }
