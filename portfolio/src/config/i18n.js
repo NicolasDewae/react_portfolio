@@ -1,5 +1,4 @@
-// translate var -> true = fr, false = en
-//test 
+// translate var -> true = fr, false = en 
 export const authorName = "Nicolas De waegenaere";
 
 export const navLink = [
