@@ -51,37 +51,37 @@ const Street = () => {
                         </div>
                         <div className="street_container_content_image">
                             <div className="single">
-                                <img src={street.projectImages.treize} alt="13" />
+                                <img src={street.projectImages.treize.image} alt={street.projectImages.treize.alt} />
                             </div>
                             <div className="pair">
-                                <img src={street.projectImages.douze} alt="12" />
-                                <img src={street.projectImages.onze} alt="11" />
+                                <img src={street.projectImages.douze.image} alt={street.projectImages.douze.alt} />
+                                <img src={street.projectImages.onze.image} alt={street.projectImages.onze.alt} />
                             </div>
                             <div className="single">
-                                <img src={street.projectImages.deux} alt="2" />
+                                <img src={street.projectImages.deux.image} alt={street.projectImages.deux.alt} />
                             </div>
                             <div className="pair">
-                                <img src={street.projectImages.quatre} alt="4" />
-                                <img src={street.projectImages.huit} alt="8" />
+                                <img src={street.projectImages.quatre.image} alt={street.projectImages.quatre.alt} />
+                                <img src={street.projectImages.huit.image} alt={street.projectImages.huit.alt} />
                             </div>
                             <div className="pair">
-                                <img src={street.projectImages.un} alt="1" />
-                                <img src={street.projectImages.six} alt="6" />
+                                <img src={street.projectImages.un.image} alt={street.projectImages.un.alt} />
+                                <img src={street.projectImages.six.image} alt={street.projectImages.six.alt} />
                             </div>
                             <div className="pair">
-                                <img src={street.projectImages.sept} alt="7" />
-                                <img src={street.projectImages.cinq} alt="5" />
+                                <img src={street.projectImages.sept.image} alt={street.projectImages.sept.alt} />
+                                <img src={street.projectImages.cinq.image} alt={street.projectImages.cinq.alt} />
                             </div>
                             <div className="single">
-                                <img src={street.projectImages.trois} alt="3" />
+                                <img src={street.projectImages.trois.image} alt={street.projectImages.trois.alt} />
                             </div>
                             <div className="pair">
-                                <img src={street.projectImages.neuf} alt="9" />
-                                <img src={street.projectImages.dix} alt="10" />
+                                <img src={street.projectImages.neuf.image} alt={street.projectImages.neuf.alt} />
+                                <img src={street.projectImages.dix.image} alt={street.projectImages.dix.alt} />
                             </div>
-                            {/* <div className="single">
-                                <img src={street.projectImages.quatorze} alt="14" />
-                            </div> */}
+                            <div className="single">
+                                <img src={street.projectImages.quatorze.image} alt={street.projectImages.quatorze.alt} />
+                            </div>
                         </div>
                     </div>
                 </div>
