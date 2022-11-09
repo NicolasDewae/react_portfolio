@@ -171,79 +171,79 @@ export const confinement = {
     projectImages: {
         un: {
             image: '/assets/img/confinement/confinement-1.jpg',
-            alt: 'Confinement',
+            alt: 'Photo prise dans un salon durant l\'annonce du confinement par d\'Emmanuel Macron',
         },
         deux: {
             image: '/assets/img/confinement/confinement-2.jpg',
-            alt: 'Confinement',
+            alt: 'Jeu d\'ombres et de lumières se reflettant sur le mur et le lit',
         },
         trois: {
             image: '/assets/img/confinement/confinement-3.jpg',
-            alt: 'Confinement',
+            alt: 'Photo d\'une de dos, regardant par la fenêtre, avant en arrière plan le beffroi de la ville de Lille',
         },
         quatre: {
             image: '/assets/img/confinement/confinement-4.jpg',
-            alt: 'Confinement',
+            alt: 'Pigeon venant se poser sur le rebord de la fenêtre',
         },
         cinq: {
             image: '/assets/img/confinement/confinement-5.jpg',
-            alt: 'Confinement',
+            alt: 'Photo d\'un homme confiné regardant par la fenêtre',
         },
         six: {
             image: '/assets/img/confinement/confinement-6.jpg',
-            alt: 'Confinement',
+            alt: 'Chat assis sur le toit d\'une voiture',
         },
         sept: {
             image: '/assets/img/confinement/confinement-7.jpg',
-            alt: 'Confinement',
+            alt: 'Photo d\'un cycliste dans les rues de deserte Lille',
         },
         huit: {
             image: '/assets/img/confinement/confinement-8.jpg',
-            alt: 'Confinement',
+            alt: 'Photo d\'une rue vide non loin de la gare Lille Europe',
         },
         neuf: {
             image: '/assets/img/confinement/confinement-9.jpg',
-            alt: 'Confinement',
+            alt: 'Photo d\'un sur son balcon, buvant un café',
         },
         dix: {
             image: '/assets/img/confinement/confinement-10.jpg',
-            alt: 'Confinement',
+            alt: 'Un homme traverse la rue, une roue de vélo dans le dos',
         },
         onze: {
             image: '/assets/img/confinement/confinement-11.jpg',
-            alt: 'Confinement',
+            alt: 'Le centre commercial Euralille vide de tout client',
         },
         douze: {
             image: '/assets/img/confinement/confinement-13.jpg',
-            alt: 'Confinement',
+            alt: 'Photo des chaussures d\'une femme marchant dans la rue',
         },
         treize: {
             image: '/assets/img/confinement/confinement-14.jpg',
-            alt: 'Confinement',
+            alt: 'Chien promenant porte de Paris',
         },
         quatorze: {
             image: '/assets/img/confinement/confinement-15.jpg',
-            alt: 'Confinement',
+            alt: 'Une femme cachant son visage, refusant d\'être photographiée',
         },
         quinze: {
             image: '/assets/img/confinement/confinement-16.jpg',
-            alt: 'Confinement',
+            alt: 'Porte de Paris à Lille, une femme surveille son enfant qui joue',
         },
         seize: {
             image: '/assets/img/confinement/confinement-18.jpg',
-            alt: 'Confinement',
+            alt: 'Photo noir et blanc du beffroi de Lille sous les nuages durant le confinement',
         },
         dixhuit: {
             image: '/assets/img/confinement/confinement-20.jpg',
-            alt: 'Confinement',
+            alt: 'Banderole avec le message "Soignants: Merci" accroché sur un balcon des tours Kennedy',
         },
         vingt: {
             image: '/assets/img/confinement/confinement-22.jpg',
-            alt: 'Confinement',
+            alt: 'Photo d\'un chat blanc assis sur un rebord de fenêtre',
         },
         vingtun: {
             image: '/assets/img/confinement/confinement-23.jpg',
-            alt: 'Confinement',
+            alt: 'Employé de Carrefour évoluant masqué dans le supermarché',
         },
     }
 }
