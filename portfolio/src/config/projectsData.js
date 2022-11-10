@@ -6,87 +6,79 @@ export const streetview = {
     projectImages: [
         {
             image: '/assets/img/streetview/Streetview-1.jpg',
-            alt: 'Salut',
+            alt: 'à Lille, un homme torse nu assis sur une chaise dehors',
         },
         {
             image: '/assets/img/streetview/Streetview-2.jpg',
-            alt: 'Street View',
+            alt: 'Place Vanhoenacker à Lille, un homme agé au premier plan attend pour traverser. Un jeune homme au second plan regarde son téléphone',
         },
         {
             image: '/assets/img/streetview/Streetview-4.jpg',
-            alt: 'Street View',
+            alt: 'Une prosituée attend debout sur le trottoir, laissant sa chaise vide',
         },
         {
             image: '/assets/img/streetview/Streetview-5.jpg',
-            alt: 'Street View',
+            alt: 'Un petit garçon cour vers le terrain de foot après avoir récupéré un ballon',
         },
         {
             image: '/assets/img/streetview/Streetview-6.jpg',
-            alt: 'Street View',
+            alt: 'Un homme et une femme debout devant un lac au Canada',
         },
         {
             image: '/assets/img/streetview/Streetview-9.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-11.jpg',
-            alt: 'Street View',
+            alt: 'Vue d\'un drone sur une ville au balnéaire',
         },
         {
             image: '/assets/img/streetview/Streetview-12.jpg',
-            alt: 'Street View',
+            alt: 'Vue d\'un drone d\'un pecheur au bord de la mer',
         },
         {
             image: '/assets/img/streetview/Streetview-13.jpg',
-            alt: 'Street View',
+            alt: 'Vue sur les façades de maisons depuis le trottoir d\'en face',
         },
         {
             image: '/assets/img/streetview/Streetview-14.jpg',
-            alt: 'Street View',
+            alt: 'Homme faisant un doigt d\'honneur à la voiture google',
         },
         {
             image: '/assets/img/streetview/Streetview-15.jpg',
-            alt: 'Street View',
+            alt: 'Un homme à côté d\'une église avec un t-shirt de Kermit la grenouille (Kermit the frog en version originale anglaise) personnage des Muppets',
         },
         {
             image: '/assets/img/streetview/Streetview-16.jpg',
-            alt: 'Street View',
+            alt: 'Un homme et une femme marchant vers le soleil dans les rues de Detroit',
         },
         {
             image: '/assets/img/streetview/Streetview-17.jpg',
-            alt: 'Street View',
+            alt: 'Bidonville à Detroit au bord d\'une route, avec un panneau publicitaire en second plan pour un cabinet d\'avocat indiquant "Injured? Call ..."',
         },
         {
             image: '/assets/img/streetview/Streetview-18.jpg',
-            alt: 'Street View',
+            alt: 'Rues de Detroit aux Etais-Unis, vivant dans sa voiture',
         },
         {
             image: '/assets/img/streetview/Streetview-19.jpg',
-            alt: 'Street View',
+            alt: 'Fenêtre d\'un immeuble à Detroit se reflète sur le trottoir. Un homme est assis sur celui-ci',
         },
         {
             image: '/assets/img/streetview/Streetview-20.jpg',
-            alt: 'Street View',
+            alt: 'Un homme sur son vélo dans les rues de Londres',
         },
         {
             image: '/assets/img/streetview/Streetview-21.jpg',
-            alt: 'Street View',
+            alt: 'Sans abri à Detroit marchant au milieu de la route lors du coucher de soleil',
         },
         {
             image: '/assets/img/streetview/Streetview-22.jpg',
-            alt: 'Street View',
+            alt: 'Un jardinier adossé à un portail de maison discute avec une femme',
         },
         {
             image: '/assets/img/streetview/Streetview-23.jpg',
-            alt: 'Street View',
+            alt: 'Femme en vélo devant la gare Lille Flandres',
         },
         {
             image: '/assets/img/streetview/Streetview-24.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-25.jpg',
-            alt: 'Street View',
+            alt: 'Un étudiant en train sur le trottoir. Derrière lui, l\'image est comme coupée en deux avec à gauche les couleurs chaudes du coucher de soleil et à droite les couleurs froides d\'un bâtiment',
         },
         {
             image: '/assets/img/streetview/Streetview-26.jpg',
