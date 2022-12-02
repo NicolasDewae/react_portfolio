@@ -21,22 +21,6 @@ export const streetview = {
             alt: 'Un petit garçon cour vers le terrain de foot après avoir récupéré un ballon',
         },
         {
-            image: '/assets/img/streetview/Streetview-6.jpg',
-            alt: 'Un homme et une femme debout devant un lac au Canada',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-9.jpg',
-            alt: 'Vue d\'un drone sur une ville au balnéaire',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-12.jpg',
-            alt: 'Vue d\'un drone d\'un pecheur au bord de la mer',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-13.jpg',
-            alt: 'Vue sur les façades de maisons depuis le trottoir d\'en face',
-        },
-        {
             image: '/assets/img/streetview/Streetview-14.jpg',
             alt: 'Homme faisant un doigt d\'honneur à la voiture google',
         },
@@ -45,32 +29,8 @@ export const streetview = {
             alt: 'Un homme à côté d\'une église avec un t-shirt de Kermit la grenouille (Kermit the frog en version originale anglaise) personnage des Muppets',
         },
         {
-            image: '/assets/img/streetview/Streetview-16.jpg',
-            alt: 'Un homme et une femme marchant vers le soleil dans les rues de Detroit',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-17.jpg',
-            alt: 'Bidonville à Detroit au bord d\'une route, avec un panneau publicitaire en second plan pour un cabinet d\'avocat indiquant "Injured? Call ..."',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-18.jpg',
-            alt: 'Rues de Detroit aux Etais-Unis, vivant dans sa voiture',
-        },
-        {
             image: '/assets/img/streetview/Streetview-19.jpg',
             alt: 'Fenêtre d\'un immeuble à Detroit se reflète sur le trottoir. Un homme est assis sur celui-ci',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-20.jpg',
-            alt: 'Un homme sur son vélo dans les rues de Londres',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-21.jpg',
-            alt: 'Sans abri à Detroit marchant au milieu de la route lors du coucher de soleil',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-22.jpg',
-            alt: 'Un jardinier adossé à un portail de maison discute avec une femme',
         },
         {
             image: '/assets/img/streetview/Streetview-23.jpg',
@@ -81,76 +41,20 @@ export const streetview = {
             alt: 'Un étudiant en train sur le trottoir. Derrière lui, l\'image est comme coupée en deux avec à gauche les couleurs chaudes du coucher de soleil et à droite les couleurs froides d\'un bâtiment',
         },
         {
-            image: '/assets/img/streetview/Streetview-26.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-27.jpg',
-            alt: 'Street View',
-        },
-        {
             image: '/assets/img/streetview/Streetview-29.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-33.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-34.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-35.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-38.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-39.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-41.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-42.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-43.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-44.jpg',
-            alt: 'Street View',
+            alt: 'Un homme fouillant dans sa voiture garée sur le bord de la route',
         },
         {
             image: '/assets/img/streetview/Streetview-45.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-46.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-47.jpg',
-            alt: 'Street View',
-        },
-        {
-            image: '/assets/img/streetview/Streetview-48.jpg',
-            alt: 'Street View',
+            alt: 'Homme au volant d\'un pick-up faisant un V avec ses doigts',
         },
         {
             image: '/assets/img/streetview/Streetview-49.jpg',
-            alt: 'Street View',
+            alt: 'Deux homme avec un haut rouge devant un batiment de la même couleur. L\'un d\'eux, suite à un beugue, est dédoublé',
         },
         {
-            image: '/assets/img/streetview/Streetview-50.jpg',
-            alt: 'Street View',
+            image: '/assets/img/streetview/Streetview-46.jpg',
+            alt: 'Auto-portrait d\'une voiture Google',
         }
     ]    
 }
