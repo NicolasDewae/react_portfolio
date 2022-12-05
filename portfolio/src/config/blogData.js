@@ -1,17 +1,20 @@
+import monPremierArticle from '../config/articles/monPremierArticle';
+
 const blogData = [
     {
-      id: 1,
-      pathway: 'titrePremierArticle',
-      title: 'Titre du premier article',
-      picture: '/assets/img/street_view-2.jpg',
-      description: 'Longue description du premier article, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl nunc consectetur nisi, eget consectetur nisi nisl eget consectetur nisi.',
+      id: monPremierArticle.id,
+      pathway: monPremierArticle.pathway,
+      title: monPremierArticle.title,
+      picture: monPremierArticle.picture,
+      description: monPremierArticle.description,
       blogImages: [
-          '/assets/img/street_view-2.jpg',
-          '/assets/img/street_view-2.jpg',
-          '/assets/img/street_view-2.jpg',
-          '/assets/img/street_view-2.jpg',
-          '/assets/img/street_view-2.jpg',
-      ]    
+        monPremierArticle.blogImages[0],
+        monPremierArticle.blogImages[1],
+        monPremierArticle.blogImages[2],
+        monPremierArticle.blogImages[3],
+        monPremierArticle.blogImages[4],
+      ]
+      
     },
     {
         id: 2,
