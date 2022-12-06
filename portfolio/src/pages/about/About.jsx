@@ -13,7 +13,7 @@ const About = () => {
     let defaultValueTranslate = localStorage.getItem('defaultValueTranslate');
     // Convert translate data into a boolean
     defaultValueTranslate = defaultValueTranslate === "false" ? false : true;
-    console.log(defaultValueTranslate);
+
     const [translate, setTranslate] = useState(defaultValueTranslate);
     const handleTranslate = () => {
         localStorage.setItem('defaultValueTranslate', !translate);  
