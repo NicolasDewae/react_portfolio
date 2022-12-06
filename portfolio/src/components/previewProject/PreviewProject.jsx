@@ -1,5 +1,5 @@
 import React from 'react';
-import './PreviewArticle.css';
+import './PreviewProject.css';
 import { Link } from 'react-router-dom';
 import Split from '../split/Split';
 
@@ -17,7 +17,7 @@ const PreviewArticle = ({
         <>
             <div className="preview">
                 <div className="picture">
-                    <img src={picture} alt="photo de l'article" />
+                    <img src={picture} alt="photo du projet" />
                 </div>
                 <div className="title">
                     <h2>{title}</h2>
