@@ -56,7 +56,16 @@ const Article = () => {
                 </div>
 
             ) : (
-                <Split />
+                <div className="blog">
+                    <div className="blog-title">
+                        <h1>Article introuvable</h1>
+                    </div>
+                    <div className="blog-content">
+                        <p>
+                            L'article que vous recherchez n'existe pas.
+                        </p>
+                    </div>
+                </div>
             )}
             <ScrollToTopBtn />
             <Footer data={translate}/>
