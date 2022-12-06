@@ -273,11 +273,11 @@ const projectData = [
       title: 'Street View',
       picture: '/assets/img/streetview/Streetview-1.jpg',
       projectImages: [
-        '/assets/img/streetview/Streetview-39.jpg',
-        '/assets/img/streetview/Streetview-41.jpg',
-        '/assets/img/streetview/Streetview-42.jpg',
-        '/assets/img/streetview/Streetview-43.jpg',
-        '/assets/img/streetview/Streetview-6.jpg'
+        '/assets/img/streetview/Streetview-1.jpg',
+        '/assets/img/streetview/Streetview-2.jpg',
+        '/assets/img/streetview/Streetview-4.jpg',
+        '/assets/img/streetview/Streetview-5.jpg',
+        '/assets/img/streetview/Streetview-14.jpg'
       ]  
     },
     {
