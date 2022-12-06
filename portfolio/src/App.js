@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import projectsData from './config/projectsData';
 import ProjectsListHome from "./components/projectListHome/ProjectsListHome";
-import { useState } from 'react';
 import ScrollToTopBtn from "./components/scrollToTopBtn/ScrollToTopBtn";
 
 function App() {
