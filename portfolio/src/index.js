@@ -13,6 +13,8 @@ import Confinement from './pages/project/confinement/Confinement';
 import Canaries from './pages/project/canaries/Canaries';
 import Street from './pages/project/street/Street';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
+import Blog from './pages/blog/Blog';
+import NotFound from './pages/notFound/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,15 +22,25 @@ root.render(
     <Router>
       <ScrollToTop>
         <Routes>
+          {/* Main routes */}
           <Route path="/" element={ <App /> } />
           <Route path="/about" element={ <About /> } />
           <Route path="/works" element={ <Works /> } />
           <Route path="/contact" element={ <Contact /> } />
-          <Route path="/blog/:id" element={ <Article /> } />
+          
+          {/* Project routes */}
           <Route path="/project/streetview" element={ <StreetView /> } />
           <Route path="/project/confinement" element={ <Confinement /> } />
           <Route path="/project/canaries" element={ <Canaries /> } />
           <Route path="/project/street" element={ <Street /> } />
+        
+          {/* 404 */}
+          <Route path='*' element={<NotFound />}/>
+
+          {/* Blog routes */}
+          <Route path="/blog" element={ <Blog /> } />
+          <Route path="/blog/:id" element={ <Article /> } />
+
         </Routes>
       </ScrollToTop>
     </Router>
