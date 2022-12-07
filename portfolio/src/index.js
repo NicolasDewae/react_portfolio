@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
-import Article from './pages/article/Article';
+import Article from './pages/articles/Article';
 import Works from './pages/works/Works';
 import StreetView from './pages/project/streetView/StreetView';
 import Confinement from './pages/project/confinement/Confinement';
@@ -15,6 +15,7 @@ import Street from './pages/project/street/Street';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Blog from './pages/blog/Blog';
 import NotFound from './pages/notFound/NotFound';
+import Her from './pages/articles/her/Her';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,6 +41,7 @@ root.render(
           {/* Blog routes */}
           <Route path="/blog" element={ <Blog /> } />
           <Route path="/blog/:id" element={ <Article /> } />
+          <Route path="/blog/her" element={ <Her /> } />
 
         </Routes>
       </ScrollToTop>
