@@ -43,7 +43,7 @@ const Blog = () => {
                                 <div className="title">
                                     <h2>{article.title}</h2>
                                 </div>
-                                <Link to={`/blog/${article.pathway}`}>
+                                <Link to={`/blog/${article.id}`}>
                                     <a className="button">
                                         Lire l'article
                                     </a>
