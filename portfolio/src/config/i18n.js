@@ -21,6 +21,11 @@ export const navLink = [
                 },
                 {
                     id: 4,
+                    title: 'Articles',
+                    pathway: '/blog',
+                },
+                {
+                    id: 5,
                     title: 'Contact',
                     pathway: '/contact',
                 }
@@ -43,6 +48,11 @@ export const navLink = [
                 },
                 {
                     id: 4,
+                    title: 'Blog',
+                    pathway: '/blog',
+                },
+                {
+                    id: 5,
                     title: 'Contact',
                     pathway: '/contact',
                 }
@@ -195,6 +205,29 @@ export const projects = [
                 {
                     id: 4,
                     canaries: 'Photographic series made during a trip to the island of Tenerife in the Canary Islands.'
+                }
+        ],
+    }
+]
+
+export const notFound = [
+    {
+        fr: [
+                {
+                    id: 1,
+                    title: '404',
+                    subTitle: 'Page introuvable',
+                    message: 'Oups! Vous semblez être perdu.',
+                    button: 'Retour à l\'accueil',
+                }
+        ],
+        en: [
+                {
+                    id: 1,
+                    title: '404',
+                    subTitle: 'Page not found',
+                    message: 'Oops! You seem to be lost.',
+                    button: 'Back to home',
                 }
         ],
     }
