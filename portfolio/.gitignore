@@ -1,6 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/public/assets/img
+/public/assets/imgProjects
+/public/assets/imgArticles
 
 # dependencies
 /node_modules
