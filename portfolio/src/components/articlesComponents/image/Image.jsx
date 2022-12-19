@@ -1,12 +1,14 @@
 import React from "react";
 import "./Image.css";
 
-const Image = ({ image }) => {
+const Image = ( data ) => {
+    const image = data.picture.img;
+    const alt = data.picture.alt;
+
     return (
         <>
             <div className="one-div">
-                <img src={ image } alt="photo de l'article" />
-                {console.log("image = " + image)}
+                <img src={ image } alt={alt} />
             </div>
         </>
     );
