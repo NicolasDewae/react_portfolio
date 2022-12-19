@@ -14,7 +14,6 @@ const ContactForm = (translate) => {
                         item.map((item) => {
                             return (
                                 <>
-                                {console.log(item.firstName)}
                                     <div>
                                         <input type="text" name="firstname" placeholder={item.firstName}/>
                                         <input type="text" name="lastname" placeholder={item.lastName}/>
