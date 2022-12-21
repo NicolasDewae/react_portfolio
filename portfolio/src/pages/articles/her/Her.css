@@ -1,0 +1,24 @@
+.her__container__content__song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.her__container__content__song p, .her__container__content__dialog p {
+    margin: 0;
+    padding: 0;
+}
+
+.her__container__content__paragraphe p {
+    width: 100%;
+    height: 100%;
+}
+
+.her__container__content__image img {
+    width: 100%;
+    height: 100%;
+}

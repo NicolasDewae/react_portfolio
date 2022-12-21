@@ -1,94 +1,183 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Her.css";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 import Split from "../../../components/split/Split";
-import Title from "../../../components/articlesComponents/title/Title";
-import Title2 from "../../../components/articlesComponents/title2/Title2";
-import Title3 from "../../../components/articlesComponents/title3/Title3";
-import Image from "../../../components/articlesComponents/image/Image";
-import OneDiv from "../../../components/articlesComponents/oneDiv/OneDiv";
 import her from "../../../config/articles/her";
 
 const Her = () => {
 
+        // Get translate data
+    let defaultValueTranslate = localStorage.getItem('defaultValueTranslate');
+    // Convert translate data into a boolean
+    defaultValueTranslate = defaultValueTranslate === "false" ? false : true;
+
+    const [translate, setTranslate] = useState(defaultValueTranslate);
+    const handleTranslate = () => {
+        localStorage.setItem('defaultValueTranslate', !translate);  
+        setTranslate(!translate);
+    }
+    
     return (
         <>
-            <Navbar />
-                <Title title={her.title1} />
-                    <Title2 title={her.title2.introduction} />
-                        <Title3 title={her.title3.synopsis} />
-                            <OneDiv data={her.paragraphe.paragraphe1} />
-                            <Image picture={her.picture.img1} />
-                            <OneDiv data={her.paragraphe.paragraphe2} />
-                            <OneDiv data={her.paragraphe.paragraphe3} />
-                            <OneDiv data={her.paragraphe.paragraphe4} />
-                            <OneDiv data={her.paragraphe.paragraphe5} />
-                            <Image picture={her.picture.img2}/>
-                    <Title2 title={her.title2.solitude} />
-                        <OneDiv data={her.paragraphe.paragraphe6} />
-                        <OneDiv data={her.paragraphe.paragraphe7} />
-                        <OneDiv data={her.paragraphe.paragraphe8} />
-                        <OneDiv data={her.paragraphe.paragraphe9} />
-                        <OneDiv data={her.paragraphe.paragraphe10} />
-                        <OneDiv data={her.paragraphe.paragraphe11} />
-                        <OneDiv data={her.paragraphe.paragraphe12} />
-                        <Image picture={her.picture.img3} />
-                    <Title2 title={her.title2.rouge} />
-                        <OneDiv data={her.paragraphe.paragraphe13} />
-                        <Image picture={her.picture.img3} />
-                        <OneDiv data={her.paragraphe.paragraphe14} />
-                        <Image picture={her.picture.img3} />
-                    <Title2 title={her.title2.jaune} />
-                        <Image picture={her.picture.img3} />
-                        <OneDiv data={her.paragraphe.paragraphe15} />
-                        <OneDiv data={her.paragraphe.paragraphe16} />
-                        <OneDiv data={her.paragraphe.paragraphe17} />
-                        <OneDiv data={her.paragraphe.paragraphe18} />
-                        <OneDiv data={her.paragraphe.paragraphe19} />
-                        <OneDiv data={her.paragraphe.paragraphe20} />
-                    <Title2 title={her.title2.blanc} />
-                        <OneDiv data={her.paragraphe.paragraphe21} />
-                        <OneDiv data={her.paragraphe.paragraphe22} />
-                        <OneDiv data={her.paragraphe.paragraphe23} />
-                    <Title2 title={her.title2.grosPlans} />
-                        <Image picture={her.picture.img3} />
-                        <OneDiv data={her.paragraphe.paragraphe24} />
-                        <Image picture={her.picture.img3} />
-                    <Title2 title={her.title2.hibou} />
-                        <Image picture={her.picture.img3} />
-                        <OneDiv data={her.paragraphe.paragraphe25} />
-                        <OneDiv data={her.paragraphe.paragraphe26} />
-                        <OneDiv data={her.paragraphe.paragraphe27} />
-                        <OneDiv data={her.paragraphe.paragraphe28} />
-                    <Title2 title={her.title2.directeurPhoto} />
-                        <OneDiv data={her.paragraphe.paragraphe29} />
-                    <Title2 title={her.title2.conslusion} />
-                        <OneDiv data={her.paragraphe.paragraphe30} />
-                        <OneDiv data={her.paragraphe.paragraphe31} />
-                        <OneDiv data={her.paragraphe.paragraphe32} />
-                        <OneDiv data={her.paragraphe.paragraphe33} />
-                        <OneDiv data={her.paragraphe.paragraphe34} />
-                        <OneDiv data={her.paragraphe.paragraphe35} />
-                        <OneDiv data={her.paragraphe.paragraphe36} />
-                        <OneDiv data={her.paragraphe.paragraphe37} />
-                        <OneDiv data={her.paragraphe.paragraphe38} />
-                        <OneDiv data={her.paragraphe.paragraphe39} />
-                        <OneDiv data={her.paragraphe.paragraphe40} />
-                        <OneDiv data={her.paragraphe.paragraphe41} />
-                        <OneDiv data={her.paragraphe.paragraphe42} />
-                        <OneDiv data={her.paragraphe.paragraphe43} />
-                    <Title2 title={her.title2.bonus} />
-                        <OneDiv data={her.paragraphe.paragraphe44} />
-                        <OneDiv data={her.paragraphe.paragraphe45} />
-                        <OneDiv data={her.paragraphe.paragraphe46} />
-                        <OneDiv data={her.paragraphe.paragraphe47} />
-                        <OneDiv data={her.paragraphe.paragraphe48} />
-                        <OneDiv data={her.paragraphe.paragraphe49} />
-                        <OneDiv data={her.paragraphe.paragraphe50} />
+            {/* Translation button */}
+            <button className='translateBtn' onClick={handleTranslate}>
+                <p className='translate'>
+                    {translate ? 'Fr' : 'En'}
+                </p>
+            </button>
+            <Navbar data={translate}/>
+            <div className="her">
+                <div className="her__container">
+                    <div className="her__container__content">
+                        <div className="her__container__content__title">
+                            <h1>{her.title1}</h1>
+                        </div>
+                        <div className="her__container__content__title2">
+                            <h2>{her.title2.introduction}</h2>
+                        </div>
+                        <div className="her__container__content__title3">
+                            <h3>{her.title3.synopsis}</h3>
+                        </div>
+                        <div className="her__container__content__paragraphe">
+                            <p>{her.paragraphe.paragraphe1}</p>
+                        </div>
+                        <div className="her__container__content__image">
+                            <img src={her.picture.img1.img} alt={her.picture.img1.alt} />
+                        </div>
+                        <div className="her__container__content__paragraphe">
+                            <p>{her.paragraphe.paragraphe2[0]}</p>
+                            <p>{her.paragraphe.paragraphe2[1]}</p>
+                            <p>{her.paragraphe.paragraphe2[2]}</p>
+                            <p>{her.paragraphe.paragraphe2[3]}</p>
+                        </div>
+                        <div className="her__container__content__image">
+                            <img src={her.picture.img3.img} alt={her.picture.img3.alt} />
+                        </div>
+                        <div className="her__container__content__title2">
+                            <h2>{her.title2.solitude}</h2>
+                        </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe3[0]}</p>
+                                <p>{her.paragraphe.paragraphe3[1]}</p>
+                                <p>{her.paragraphe.paragraphe3[2]}</p>
+                                <p>{her.paragraphe.paragraphe3[3]}</p>
+                                <p>{her.paragraphe.paragraphe3[4]}</p>
+                                <p>{her.paragraphe.paragraphe3[5]}</p>
+                                <p>{her.paragraphe.paragraphe3[6]}</p>
+                            </div>
+                            <div className="her__container__content__image">
+                                <img src={her.picture.img4.img} alt={her.picture.img4.alt} />
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.rouge}</h2>
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe4}</p>
+                            </div>
+                            <div className="her__container__content__image">
+                                <img src={her.picture.img15.img} alt={her.picture.img15.alt} />
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p >{her.paragraphe.paragraphe5}</p>
+                            </div>
+                            <div className="her__container__content__image">
+                                <img src={her.picture.img1.img} alt={her.picture.img1.alt} />
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.jaune}</h2>
+                            </div>
+                            <div className="her__container__content__image">
+                                <img src={her.picture.img1.img} alt={her.picture.img1.alt} />
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe6[0]}</p>
+                                <p>{her.paragraphe.paragraphe6[1]}</p>
+                                <p>{her.paragraphe.paragraphe6[2]}</p>
+                                <p>{her.paragraphe.paragraphe6[3]}</p>
+                                <p>{her.paragraphe.paragraphe6[4]}</p>
+                                <p>{her.paragraphe.paragraphe6[5]}</p>
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.blanc}</h2>
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe7[0]}</p>
+                                <p>{her.paragraphe.paragraphe7[1]}</p>
+                                <p>{her.paragraphe.paragraphe7[2]}</p>
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.grosPlans}</h2>
+                            </div>
+                            <div className="her__container__content__image">
+                                <img src={her.picture.img1.img} alt={her.picture.img1.alt} />
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe8[0]}</p>
+                            </div>
+                            <div className="her__container__content__image">
+                                <img src={her.picture.img1.img} alt={her.picture.img1.alt} />
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.hibou}</h2>
+                            </div>
+                            <div className="her__container__content__image">
+                                <img src={her.picture.img1.img} alt={her.picture.img1.alt} />
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe9[0]}</p>
+                                <p>{her.paragraphe.paragraphe9[1]}</p>
+                                <p>{her.paragraphe.paragraphe9[2]}</p>
+                                <p>{her.paragraphe.paragraphe9[3]}</p>
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.directeurPhoto}</h2>
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe10}</p>
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.conslusion}</h2>
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe11[0]}</p>
+                                <p>{her.paragraphe.paragraphe11[1]}</p>
+                                <p>{her.paragraphe.paragraphe11[2]}</p>
+                                <p>{her.paragraphe.paragraphe11[3]}</p>
+                            </div>
+                            <div className="her__container__content__song">
+                                <p>{her.paragraphe.paragraphe12[0]}</p>
+                                <p>{her.paragraphe.paragraphe12[1]}</p>
+                                <p>{her.paragraphe.paragraphe12[2]}</p>
+                                <p>{her.paragraphe.paragraphe12[3]}</p>
+                                <p>{her.paragraphe.paragraphe12[4]}</p>
+                                <p>{her.paragraphe.paragraphe12[5]}</p>
+                                <p>{her.paragraphe.paragraphe12[6]}</p>
+                                <p>{her.paragraphe.paragraphe12[7]}</p>
+                                <p>{her.paragraphe.paragraphe12[8]}</p>
+                                <p>{her.paragraphe.paragraphe12[9]}</p>
+                                <p>{her.paragraphe.paragraphe12[10]}</p>
+                            </div>
+                            <div className="her__container__content__title2">
+                                <h2>{her.title2.bonus}</h2>
+                            </div>
+                            <div className="her__container__content__paragraphe">
+                                <p>{her.paragraphe.paragraphe13}</p>
+                            </div>
+                            <div className="her__container__content__dialog">
+                                <p>{her.paragraphe.paragraphe14[0]}</p>
+                                <p>{her.paragraphe.paragraphe14[1]}</p>
+                                <p>{her.paragraphe.paragraphe14[2]}</p>
+                                <p>{her.paragraphe.paragraphe14[3]}</p>
+                                <p>{her.paragraphe.paragraphe14[4]}</p>
+                                <p>{her.paragraphe.paragraphe14[5]}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <Split />
-            <Footer />
+            <Footer data={translate} />
             <ScrollToTopBtn />
         </>
     );
