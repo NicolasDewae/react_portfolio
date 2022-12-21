@@ -38,7 +38,8 @@ const Blog = () => {
                             <>
                             <div className="preview">
                                 <div className="picture">
-                                    <img src={article.picture} alt="photo de l'article" />
+                                    {console.log("image" + article.picture)}
+                                    <img src={article.picture.img} alt={article.picture.alt} />
                                 </div>
                                 <div className="title">
                                     <h2>{article.title}</h2>
