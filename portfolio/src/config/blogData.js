@@ -6,15 +6,8 @@ const blogData = [
       id: her.id,
       pathway: her.pathway,
       title: her.title1,
-      picture: her.picture,
+      picture: her.picture.img1,
       description: her.description,
-      blogImages: [
-        her.blogImages[0],
-        her.blogImages[1],
-        her.blogImages[2],
-        her.blogImages[3],
-        her.blogImages[4],
-      ]
     },
     {
       id: monDeuxiemeArticle.id,
@@ -22,13 +15,6 @@ const blogData = [
       title: monDeuxiemeArticle.title,
       picture: monDeuxiemeArticle.picture,
       description: monDeuxiemeArticle.description,
-      blogImages: [
-        monDeuxiemeArticle.blogImages[0],
-        monDeuxiemeArticle.blogImages[1],
-        monDeuxiemeArticle.blogImages[2],
-        monDeuxiemeArticle.blogImages[3],
-        monDeuxiemeArticle.blogImages[4],
-      ]
     }
 ]
 
