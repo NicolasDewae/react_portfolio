@@ -16,16 +16,19 @@ body {
   --desktopPSize: 1.5rem;
   --desktopH1Size: 5rem;
   --desktopH2Size: 2.5rem;
+  --desktopH3Size: 2rem;
 
   /* tablet */
   --tabletPSize: 1.2rem;
   --tabletH1Size: 2.5rem;
   --tabletH2Size: 2rem;
+  --tabletH3Size: 1.5rem;
 
   /* mobile */
   --mobilePSize: 0.9rem;
   --mobileH1Size: 2.5rem;
   --mobileH2Size: 2rem;
+  --mobileH3Size: 1.5rem;
 
 }
 
@@ -42,7 +45,14 @@ h1 {
 
 h2 {
   font-size: var(--desktopH2Size);
-  margin: 0 9% 0 0;
+  margin: 5% 9% 1% 0;
+  padding: 0 0 0 0;
+  display: flex;
+}
+
+h3 {
+  font-size: var(--desktopH3Size);
+  margin: 5% 9% 1% 0;
   padding: 0 0 0 0;
   display: flex;
 }
@@ -92,7 +102,7 @@ p {
 
 @media screen and (max-width: 1007px) {
   h1{
-      font-size: 4rem;
+    font-size: 4rem;
   }
   h2 {
     font-size: 2rem;
@@ -101,7 +111,7 @@ p {
 
 @media screen and (max-width: 700px) {
   h1{
-      font-size: 3rem;
+    font-size: 3rem;
   }
 }
 
