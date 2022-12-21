@@ -4,7 +4,6 @@ import Navbar from '../../components/navbar/Navbar';
 import './Article.css';
 import blogBata from '../../config/blogData';
 import { useParams } from 'react-router-dom';
-import Split from '../../components/split/Split';
 import ScrollToTopBtn from '../../components/scrollToTopBtn/ScrollToTopBtn';
 
 const Article = () => {
