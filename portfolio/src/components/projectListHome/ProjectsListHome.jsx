@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectsListHome.css";
 import PreviewProjectHome from "../previewProjectHome/PreviewProjectHome";
-import { previewProject } from "../../config/i18n";
+import { previewProject } from "../../data/i18n";
 
 const ProjectsListHome = ({ data, projects }) => {
     return (

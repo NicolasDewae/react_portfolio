@@ -5,7 +5,7 @@ import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 import Split from "../../components/split/Split";
 import ScrollToTopBtn from "../../components/scrollToTopBtn/ScrollToTopBtn";
-import { notFound } from "../../config/i18n";
+import { notFound } from "../../data/i18n";
 
 const NotFound = () => {
 

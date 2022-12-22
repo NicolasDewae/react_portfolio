@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./StreetView.css";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
-import { streetview } from "../../../config/projectsData";
-import { projects } from "../../../config/i18n";
+import { streetview } from "../../../data/projectsData";
+import { projects } from "../../../data/i18n";
 import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 
 const StreetView = () => {

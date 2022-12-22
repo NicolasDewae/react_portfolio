@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import { mainContent } from '../../config/i18n';
+import { mainContent } from '../../data/i18n';
 
 const Main = (translate) => {
     return (

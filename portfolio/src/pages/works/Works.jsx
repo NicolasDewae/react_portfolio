@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import './Works.css';
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import projectsData from '../../config/projectsData';
+import projectsData from '../../data/projectsData';
 import CardProject from "../../components/cardProject/CardProject";
 import { Link } from 'react-router-dom';
 import Carousel from "../../components/carousel/Carousel";
 import Split from "../../components/split/Split";
 import Main from "../../components/main/Main";
-import { previewProject } from "../../config/i18n";
+import { previewProject } from "../../data/i18n";
 import ScrollToTopBtn from "../../components/scrollToTopBtn/ScrollToTopBtn";
 
 const Works = () => {

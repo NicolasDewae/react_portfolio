@@ -1,5 +1,5 @@
 import React from "react";
-import { contact } from "../../config/i18n";
+import { contact } from "../../data/i18n";
 import "./ContactForm.css";
 
 const ContactForm = (translate) => {

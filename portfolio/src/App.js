@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
-import projectsData from './config/projectsData';
+import projectsData from './data/projectsData';
 import ProjectsListHome from "./components/projectListHome/ProjectsListHome";
 import ScrollToTopBtn from "./components/scrollToTopBtn/ScrollToTopBtn";
 

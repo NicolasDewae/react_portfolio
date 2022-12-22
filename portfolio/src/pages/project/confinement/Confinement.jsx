@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Confinement.css";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
-import { confinement } from "../../../config/projectsData";
-import { projects } from "../../../config/i18n";
+import { confinement } from "../../../data/projectsData";
+import { projects } from "../../../data/i18n";
 import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 
 const Confinement = () => {

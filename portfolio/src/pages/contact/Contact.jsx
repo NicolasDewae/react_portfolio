@@ -4,7 +4,7 @@ import Navbar from '../../components/navbar/Navbar';
 import ContactForm from '../../components/contactForm/ContactForm';
 import './Contact.css';
 import Split from '../../components/split/Split';
-import { contact } from "../../config/i18n";
+import { contact } from "../../data/i18n";
 import ScrollToTopBtn from '../../components/scrollToTopBtn/ScrollToTopBtn';
 
 const Contact = () => {

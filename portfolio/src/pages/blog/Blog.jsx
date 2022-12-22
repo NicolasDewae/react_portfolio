@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './Blog.css';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
-import blogData from '../../config/blogData';
+import blogPageData from '../../data/blogPageData';
 import Split from '../../components/split/Split';
 import ScrollToTopBtn from '../../components/scrollToTopBtn/ScrollToTopBtn';
 import { Link } from 'react-router-dom';
+import { blog } from '../../data/i18n';
 
 const Blog = () => {
 
@@ -31,29 +32,41 @@ const Blog = () => {
             <Navbar data={translate} />
 
             <div className="blog">
-                <Split />
                 {
-                    blogData.map((article) => {
+                    blogPageData.map((article) => {
                         return (
                             <>
-                            <div className="preview">
-                                <div className="picture">
-                                    {console.log("image" + article.picture)}
-                                    <img src={article.picture.img} alt={article.picture.alt} />
+                                <div className="preview">
+                                    <div className="title">
+                                        <h2>{article.title}</h2>
+                                    </div>
+                                    <div className="picture">
+                                        <img src={article.picture.src} alt={article.picture.alt} />
+                                    </div>
+                                    <div>
+                                        <p>{article.description}</p>
+                                    </div>
+                                    <Link to={`/blog/${article.pathway}`}>
+                                            {
+                                                blog.map((text) => {
+                                                    var btn = translate ? text.fr : text.en;
+                                                    return (
+                                                        btn.map((item) => {
+                                                            return (
+                                                                <a className="button">
+                                                                    {item.button}
+                                                                </a>
+                                                            )
+                                                        })
+                                                    )
+                                                })
+                                            }
+                                    </Link>
                                 </div>
-                                <div className="title">
-                                    <h2>{article.title}</h2>
+                                <div>
+                                    <Split />
                                 </div>
-                                <Link to={`/blog/${article.pathway}`}>
-                                    <a className="button">
-                                        Lire l'article
-                                    </a>
-                                </Link>
-                            </div>
-                            <div>
-                                <Split />
-                            </div>
-                        </>
+                            </>
                         )
                     })
                 }

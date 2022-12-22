@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import InputMail from '../inputMail/InputMail';
-import { footer } from '../../config/i18n';
+import { footer } from '../../data/i18n';
 import Split from '../split/Split';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';

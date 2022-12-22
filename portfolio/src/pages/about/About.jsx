@@ -3,7 +3,7 @@ import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
 import './About.css';
 import Split from '../../components/split/Split';
-import { about } from '../../config/i18n';
+import { about } from '../../data/i18n';
 import ScrollToTopBtn from '../../components/scrollToTopBtn/ScrollToTopBtn';
 
 

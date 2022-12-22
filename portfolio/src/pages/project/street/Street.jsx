@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Street.css";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
-import { street } from "../../../config/projectsData";
-import { projects } from "../../../config/i18n";
+import { street } from "../../../data/projectsData";
+import { projects } from "../../../data/i18n";
 import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 
 
