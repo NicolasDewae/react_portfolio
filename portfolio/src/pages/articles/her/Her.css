@@ -22,3 +22,15 @@
     width: 100%;
     height: 100%;
 }
+
+.her__container__content__video iframe {
+    width: 80%;
+    height: 400px;
+}
+
+.her__container__content__video {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
