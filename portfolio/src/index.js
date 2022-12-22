@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
-import Article from './pages/articles/Article';
 import Works from './pages/works/Works';
 import StreetView from './pages/project/streetView/StreetView';
 import Confinement from './pages/project/confinement/Confinement';
@@ -16,6 +15,7 @@ import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Blog from './pages/blog/Blog';
 import NotFound from './pages/notFound/NotFound';
 import Her from './pages/articles/her/Her';
+import Drive from './pages/articles/drive/Drive';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,7 +29,7 @@ root.render(
           <Route path="/works" element={ <Works /> } />
           <Route path="/contact" element={ <Contact /> } />
           
-          {/* Project routes */}
+          {/* Projects routes */}
           <Route path="/project/streetview" element={ <StreetView /> } />
           <Route path="/project/confinement" element={ <Confinement /> } />
           <Route path="/project/canaries" element={ <Canaries /> } />
@@ -40,7 +40,7 @@ root.render(
 
           {/* Blog routes */}
           <Route path="/blog" element={ <Blog /> } />
-          <Route path="/blog/:id" element={ <Article /> } />
+          <Route path="/blog/drive" element={ <Drive /> } />
           <Route path="/blog/her" element={ <Her /> } />
 
         </Routes>
