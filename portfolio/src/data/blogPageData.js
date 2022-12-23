@@ -15,7 +15,7 @@ const blogPageData = [
       pathway: Drive.pathway,
       category: Drive.category,
       title: Drive.title.title1,
-      picture: Drive.picture,
+      picture: Drive.picture.img1,
       description: Drive.description,
     }
 ]
