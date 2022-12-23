@@ -8,7 +8,7 @@ import her from "../../../data/articles/her";
 
 const Her = () => {
 
-        // Get translate data
+    // Get translate data
     let defaultValueTranslate = localStorage.getItem('defaultValueTranslate');
     // Convert translate data into a boolean
     defaultValueTranslate = defaultValueTranslate === "false" ? false : true;
