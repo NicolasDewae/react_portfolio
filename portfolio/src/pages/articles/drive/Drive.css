@@ -1,0 +1,15 @@
+.drive {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.drive__sidebar {
+    width: 30%;
+    margin: 0 0 0 10%;
+}
+
+.drive__container {
+    width: 70%;
+}

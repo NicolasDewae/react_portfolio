@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Drive.css";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 import Split from "../../../components/split/Split";
 import drive from "../../../data/articles/drive";
+import MoviesService from "../../../services/MoviesService";
+import SidebarMovie from "../../../components/sidebarMovie/SidebarMovie";
 
 const Drive = () => {
     
@@ -18,6 +20,14 @@ const Drive = () => {
             localStorage.setItem('defaultValueTranslate', !translate);  
             setTranslate(!translate);
         }
+
+        // movie service instanciation
+        let moviesService = new MoviesService();
+        let [movies, setMovies] = useState([]);
+
+        useEffect(() => {
+            moviesService.getMoviesById("64690", setMovies);
+        }, []);
 
     return (
         <>
@@ -140,6 +150,9 @@ const Drive = () => {
                     <div className="her__container__content__paragraphe">
                         <p>{drive.paragraphe.p11}</p>
                     </div>
+                </div>
+                <div className="drive__sidebar">
+                    <SidebarMovie movie={movies} />
                 </div>
             </div>
             <Split />
