@@ -7,6 +7,7 @@ export default class MovieService extends React.Component {
     /**
      * Get movies by id
      * @param {string} id
+     * @param {function} setMovies
      */
     getMoviesById(id, setMovies) {
         axios.get(API_BASE_URL + "/movie/" + id + "?language=fr-FR",{
