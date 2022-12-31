@@ -2,7 +2,7 @@ const Drive = {
     id: 2,
     pathway: 'drive',
     category: 'cinema',
-    description: 'Longue description du second article, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl nunc consectetur nisi, eget consectetur nisi nisl eget consectetur nisi.',
+    description: '"Ryan Gosling incarne un mécanicien solitaire et discret qui travaille dans un garage de Los Angeles et effectue occasionnellement des cascades pour des acteurs de cinéma. Cependant, il mène également une double vie en tant que conducteur pour des criminels la nuit. "Drive" est un thriller palpitant qui suit les aventures de ce personnage complexe dans les rues de la ville."',
     link: {
 
     },
