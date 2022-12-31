@@ -37,31 +37,33 @@ const Blog = () => {
                         return (
                             <>
                                 <div className="preview">
-                                    <div className="title">
-                                        <h2>{article.title}</h2>
-                                    </div>
                                     <div className="picture">
                                         <img src={article.picture.src} alt={article.picture.alt} />
                                     </div>
-                                    <div>
-                                        <p>{article.description}</p>
+                                    <div className='text-block'>
+                                        <div className="title">
+                                            <h2>{article.title}</h2>
+                                        </div>
+                                        <div className='description'>
+                                            <p>{article.description}</p>
+                                        </div>
+                                        <Link to={`/blog/${article.pathway}`}>
+                                                {
+                                                    blog.map((text) => {
+                                                        var btn = translate ? text.fr : text.en;
+                                                        return (
+                                                            btn.map((item) => {
+                                                                return (
+                                                                    <a className="button">
+                                                                        {item.button}
+                                                                    </a>
+                                                                )
+                                                            })
+                                                        )
+                                                    })
+                                                }
+                                        </Link>
                                     </div>
-                                    <Link to={`/blog/${article.pathway}`}>
-                                            {
-                                                blog.map((text) => {
-                                                    var btn = translate ? text.fr : text.en;
-                                                    return (
-                                                        btn.map((item) => {
-                                                            return (
-                                                                <a className="button">
-                                                                    {item.button}
-                                                                </a>
-                                                            )
-                                                        })
-                                                    )
-                                                })
-                                            }
-                                    </Link>
                                 </div>
                                 <div>
                                     <Split />
