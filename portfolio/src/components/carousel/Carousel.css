@@ -1,185 +1,24 @@
-.slider {
+.carousel-container {
+    position: relative;
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+.carousel .arrow.previous {
+    left: 10px;
+}
+
+.carousel .arrow.next {
+    right: 10px;
+}
+
+.carousel-container img {
     max-width: 1000px;
-    overflow: hidden;
-}
-
-.slides {
-    width: calc(1000px * 4);
-    animation: slide 60s infinite;
-}
-
-.slide {
-    float: left;
-}
-
-.slide img {
-    width: 1000px;
-    height: auto;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    7.7% {
-        transform: translateX(0);
-    }
-    15.4% {
-        transform: translateX(-1000px);
-    }
-    23.08% {
-        transform: translateX(-1000px);
-    }
-    30.78% {
-        transform: translateX(-2000px);
-    }
-    38.48% {
-        transform: translateX(-2000px);
-    }
-    46.18% {
-        transform: translateX(-3000px);
-    }
-    53.88% {
-        transform: translateX(-3000px);
-    }
-    61.58% {
-        transform: translateX(-2000px);
-    }
-    69.28% {
-        transform: translateX(-2000px);
-    }
-    76.98% {
-        transform: translateX(-1000px);
-    }
-    84.68% {
-        transform: translateX(-1000px);
-    }
-    92.38% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes responsiveSlide400 {
-    0% {
-        transform: translateX(0);
-    }
-    7.7% {
-        transform: translateX(0);
-    }
-    15.4% {
-        transform: translateX(-400px);
-    }
-    23.08% {
-        transform: translateX(-400px);
-    }
-    30.78% {
-        transform: translateX(-800px);
-    }
-    38.48% {
-        transform: translateX(-800px);
-    }
-    46.18% {
-        transform: translateX(-1200px);
-    }
-    53.88% {
-        transform: translateX(-1200px);
-    }
-    61.58% {
-        transform: translateX(-800px);
-    }
-    69.28% {
-        transform: translateX(-800px);
-    }
-    76.98% {
-        transform: translateX(-400px);
-    }
-    84.68% {
-        transform: translateX(-400px);
-    }
-    92.38% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes responsiveSlide800 {
-    0% {
-        transform: translateX(0);
-    }
-    7.7% {
-        transform: translateX(0);
-    }
-    15.4% {
-        transform: translateX(-800px);
-    }
-    23.08% {
-        transform: translateX(-800px);
-    }
-    30.78% {
-        transform: translateX(-1600px);
-    }
-    38.48% {
-        transform: translateX(-1600px);
-    }
-    46.18% {
-        transform: translateX(-2400px);
-    }
-    53.88% {
-        transform: translateX(-2400px);
-    }
-    61.58% {
-        transform: translateX(-1600px);
-    }
-    69.28% {
-        transform: translateX(-1600px);
-    }
-    76.98% {
-        transform: translateX(-800px);
-    }
-    84.68% {
-        transform: translateX(-800px);
-    }
-    92.38% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .slider {
-        max-width: 800px;
-        height: auto;
-    }
-    .slides {
-        width: calc(800px * 4);
-        animation: responsiveSlide800 60s infinite;
-    }
-
-    .slide img {
-        width: 800px;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 810px) {
-    .slider {
-        max-width: 400px;
-        height: auto;
-    }
-    .slides {
-        width: calc(400px * 4);
-        animation: responsiveSlide400 60s infinite;
-    }
-
-    .slide img {
-        width: 400px;
-        height: auto;
-    }
 }
