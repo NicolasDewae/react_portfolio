@@ -1,5 +1,5 @@
 > **Warning**
-> ## Work in progress. Articles section does not work and the contact form needs more testing but the rest is ok 
+> ## Work in progress. the contact form needs more testing but the rest is ok 
 
 # Photographer portfolio
 
