@@ -10,3 +10,25 @@
 .sidebar-movie-image img {
     width: 100%;
 }
+
+.sidebar-movie-cash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-movie-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .sidebar-movie-cash {
+        display: block;
+    }
+
+    .sidebar-movie-type {
+        display: block;
+    }
+}
