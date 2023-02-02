@@ -1,11 +1,18 @@
 .preview {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .picture {
     width: 100%;
 }
 
-.title h2 {
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+.preview .button {
     margin: 0;
 }
