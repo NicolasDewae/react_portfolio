@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Her.css";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import ScrollToTopBtn from "../../../components/scrollToTopBtn/ScrollToTopBtn";
 import Split from "../../../components/split/Split";
 import her from "../../../data/articles/her";
+import SidebarMovie from "../../../components/sidebarMovie/SidebarMovie";
+import MoviesService from "../../../services/MoviesService";
 
 const Her = () => {
 
@@ -18,6 +20,14 @@ const Her = () => {
         localStorage.setItem('defaultValueTranslate', !translate);  
         setTranslate(!translate);
     }
+
+    // movie service instanciation
+    let moviesService = new MoviesService();
+    let [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+        moviesService.getMoviesById("152601", setMovies);
+    }, []);
     
     return (
         <>
@@ -179,6 +189,9 @@ const Her = () => {
                                 <p>{her.paragraphe.p14[5]}</p>
                             </div>
                         </div>
+                    </div>
+                    <div className="drive__sidebar">
+                        <SidebarMovie movie={movies} />
                     </div>
                 </div>
             <Split />

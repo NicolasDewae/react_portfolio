@@ -13,3 +13,7 @@
 .drive__container {
     width: 70%;
 }
+
+.drive__container__content__image img {
+    width: 100%;
+}
