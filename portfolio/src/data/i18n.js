@@ -178,7 +178,7 @@ export const projects = [
                 },
                 {
                     id: 2,
-                    confinement: 'Dans cette série nommée très simplement "Confinement", j\'ai voulu témoigner de celui-ci tel que je l\'ai vécu'
+                    confinement: 'Cette série photographique a été réalisée pendant le premier confinement lié à la pandémie de COVID-19. À travers celle-ci, j\'ai souhaité témoigner de cette période singulière de notre histoire en donnant un aperçu très personnel du confinement.'
                 },
                 {
                     id: 3,
@@ -196,7 +196,7 @@ export const projects = [
                 },
                 {
                     id: 2,
-                    confinement: 'In this series simply named "Confinement", I wanted to testify to it as I experienced it'
+                    confinement: 'This photographic series was taken during the first lockdown related to the COVID-19 pandemic. Through it, I aimed to document this unique period in our history by providing a very personal insight into the lockdown.'
                 },
                 {
                     id: 3,
