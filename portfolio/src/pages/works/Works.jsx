@@ -7,7 +7,6 @@ import CardProject from "../../components/cardProject/CardProject";
 import { Link } from 'react-router-dom';
 import Carousel from "../../components/carousel/Carousel";
 import Split from "../../components/split/Split";
-import Main from "../../components/main/Main";
 import { previewProject } from "../../data/i18n";
 import ScrollToTopBtn from "../../components/scrollToTopBtn/ScrollToTopBtn";
 
@@ -33,9 +32,6 @@ const Works = () => {
                 </p>
             </button>
             <Navbar data={translate} />
-            <div className="projects">
-                <Main data={translate} />
-            </div>
             <div className="project-list">
                 <CardProject pathway={projectsData[0].pathway} title={projectsData[0].title} picture={projectsData[0].picture} />
                 <CardProject pathway={projectsData[1].pathway} title={projectsData[1].title} picture={projectsData[1].picture} />

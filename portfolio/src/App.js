@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import projectsData from './data/projectsData';
 import ProjectsListHome from "./components/projectListHome/ProjectsListHome";
@@ -29,7 +28,6 @@ function App() {
           </p>
       </button>
       <Navbar data={translate} />
-      <Main data={translate} />
       <ProjectsListHome data={translate} projects={projectsData} />
       <ScrollToTopBtn />
       <Footer data={translate} />

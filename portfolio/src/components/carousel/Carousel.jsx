@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-
 import './Carousel.css';
 
 const Carousel = ({ picture1, picture2, picture3, picture4 }) => {
@@ -25,13 +24,13 @@ const Carousel = ({ picture1, picture2, picture3, picture4 }) => {
 
     return (
         <div className="carousel-container">
-        <div className="arrow previous" onClick={handlePrevious}>
-            <FontAwesomeIcon icon={faChevronLeft}/>
-        </div>
-        <img src={images[currentIndex].url} alt="carousel" className="carousel-image" />
-        <div className="arrow next" onClick={handleNext}>
-        <FontAwesomeIcon icon={faChevronRight} />
-        </div>
+            <div className="arrow previous" onClick={handlePrevious}>
+                <FontAwesomeIcon icon={faChevronLeft}/>
+            </div>
+            <img src={images[currentIndex].url} alt="carousel" className="carousel-image" />
+            <div className="arrow next" onClick={handleNext}>
+                <FontAwesomeIcon icon={faChevronRight} />
+            </div>
         </div>
     );
 };
