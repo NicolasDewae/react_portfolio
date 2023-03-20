@@ -205,62 +205,62 @@ export const street = {
     id: 4,
     pathway: 'street',
     title: 'Street',
-    picture: '/assets/imgProjects/street/Street-1.jpg',
+    picture: '/assets/imgProjects/street/street-1.jpg',
     projectImages: {
         un: {
-            image: '/assets/imgProjects/street/Street-1.jpg',
+            image: '/assets/imgProjects/street/street-1.jpg',
             alt: 'Time Square à New York, USA, ambulance passent devant des femmes en tenue de soirée',
         },
         deux: {
-            image: '/assets/imgProjects/street/Street-2.jpg',
+            image: '/assets/imgProjects/street/street-2.jpg',
             alt: 'Vue en plongé d\'un groupe d\'homme sur le toit d\'un parking. La photo rappelle celle de René Burri prise à Sao Paulo en 1960',
         },
         trois: {
-            image: '/assets/imgProjects/street/Street-3.jpg',
+            image: '/assets/imgProjects/street/street-3.jpg',
             alt: 'Homme attendant seul dans la foule à Montréal',
         },
         quatre: {
-            image: '/assets/imgProjects/street/Street-4.jpg',
+            image: '/assets/imgProjects/street/street-4.jpg',
             alt: 'Une homme et une femme se regarde dans les yeux au moment de traverser dans une rue de Londres',
         },
         cinq: {
-            image: '/assets/imgProjects/street/Street-5.jpg',
+            image: '/assets/imgProjects/street/street-5.jpg',
             alt: 'Marchant de journaux polonais attendant les clients',
         },
         six: {
-            image: '/assets/imgProjects/street/Street-6.jpg',
+            image: '/assets/imgProjects/street/street-6.jpg',
             alt: 'Plusieurs personnes de tous ages marchant dans la rue, il y a de nombreux rappels de rouges',
         },
         sept: {
-            image: '/assets/imgProjects/street/Street-7.jpg',
+            image: '/assets/imgProjects/street/street-7.jpg',
             alt: 'Homme avec un chapeau melon rentrant des courses à Paris',
         },
         huit: {
-            image: '/assets/imgProjects/street/Street-8.jpg',
+            image: '/assets/imgProjects/street/street-8.jpg',
             alt: 'Homme à vélo passe dans le trafic des rues de Paris, une guitare sur le dos',
         },
         neuf: {
-            image: '/assets/imgProjects/street/Street-9.jpg',
+            image: '/assets/imgProjects/street/street-9.jpg',
             alt: 'Femme à Paris raccompagnant ses enfants',
         },
         dix: {
-            image: '/assets/imgProjects/street/Street-10.jpg',
+            image: '/assets/imgProjects/street/street-10.jpg',
             alt: 'Photo de rue d\'une femme en vélo à Paris',
         },
         onze: {
-            image: '/assets/imgProjects/street/Street-11.jpg',
+            image: '/assets/imgProjects/street/street-11.jpg',
             alt: 'Femme se faisant emmêler avec la laisse de son chien par se dernier, pendant la promenade dans les rues de Paris',
         },
         douze: {
-            image: '/assets/imgProjects/street/Street-12.jpg',
+            image: '/assets/imgProjects/street/street-12.jpg',
             alt: 'Homme portant un t-shirt avec la tour eiffel imprimée à l\'envers, dans les rues de Paris',
         },
         treize: {
-            image: '/assets/imgProjects/street/Street-13.jpg',
+            image: '/assets/imgProjects/street/street-13.jpg',
             alt: 'Homme, la cinquantaine, avec un porte document à la main et un cigare à la bouche, regardant vers le ciel',
         },
         quatorze: {
-            image: '/assets/imgProjects/street/Street-14.jpg',
+            image: '/assets/imgProjects/street/street-14.jpg',
             alt: 'Palette seule sur le trottoir à Paris',
         }
     }
