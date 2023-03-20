@@ -297,13 +297,13 @@ const projectData = [
         id: 3,
         pathway: 'street',
         title: 'Street',
-        picture: '/assets/imgProjects/street/Street-13.jpg',
+        picture: '/assets/imgProjects/street/street-13.jpg',
         projectImages: [
-            '/assets/imgProjects/street/Street-1.jpg',
-            '/assets/imgProjects/street/Street-2.jpg',
-            '/assets/imgProjects/street/Street-3.jpg',
-            '/assets/imgProjects/street/Street-4.jpg',
-            '/assets/imgProjects/street/Street-5.jpg',
+            '/assets/imgProjects/street/street-1.jpg',
+            '/assets/imgProjects/street/street-2.jpg',
+            '/assets/imgProjects/street/street-3.jpg',
+            '/assets/imgProjects/street/street-4.jpg',
+            '/assets/imgProjects/street/street-5.jpg',
         ]
     },
     {
