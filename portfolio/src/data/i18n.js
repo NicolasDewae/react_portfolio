@@ -100,14 +100,14 @@ export const about = [
                 {
                     id: 1,
                     title: 'A propos',
-                    message: 'Je réunis deux grandes passion, le développement web et la photographie. Ce portfolio est la pour me permettre de présenter les deux.',
+                    message: 'Je suis développeur web et photographe passionné.',
                 }
         ],
         en: [
                 {
                     id: 1,
                     title: 'About',
-                    message: 'I bring together two great passions, web development and photography. This portfolio is here to allow me to present both.',
+                    message: 'I am a web developer and passionate about photography.',
                 }
         ],
     }
