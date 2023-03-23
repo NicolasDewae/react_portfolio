@@ -100,7 +100,7 @@ export const about = [
                 {
                     id: 1,
                     title1: 'A propos',
-                    title2: 'Je suis développeur web et photographe passionné.',
+                    title2: 'je suis un photographe basé à Lille',
                     message: [
                         'Je m\'appelle '+ authorName +', et je suis un photographe basé à Lille.', 
                         'J\'ai créé ce site pour présenter mes projets photographiques. Mon objectif est de partager ma passion pour la photographie',
@@ -113,7 +113,7 @@ export const about = [
                 {
                     id: 1,
                     title1: 'About',
-                    title2: 'I am a web developer and passionate about photography.',
+                    title2: 'I am a photographer based in Lille',
                     message: [
                         'My name is '+ authorName +', and I am a photographer based in Lille.',
                         'I created this site to present my photographic projects. My goal is to share my passion for photography',

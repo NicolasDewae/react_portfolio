@@ -32,15 +32,12 @@ body {
 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 h1, h2, h3 {
   font-family: 'Alfa Slab One', cursive;
 }
 h1 {
   font-size: var(--desktopH1Size);
+  text-transform: uppercase;
 }
 
 h2 {
