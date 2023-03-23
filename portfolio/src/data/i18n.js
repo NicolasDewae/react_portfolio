@@ -104,7 +104,7 @@ export const about = [
                     message: [
                         'Je m\'appelle '+ authorName +', et je suis un photographe basé à Lille.', 
                         'J\'ai créé ce site pour présenter mes projets photographiques. Mon objectif est de partager ma passion pour la photographie',
-                        'Sur ce site, vous pourrez découvrir mes différents projets photographiques, qui sont principalement axés sur l\'environnement urbain. Actuellement vous y découvrirez, « Street view » qui est motivé par le travail de Doug Rickard et Jon Rafman, « Confinement » qui raconte mon confinement ou encore « Street » qui présente, sans vraie structure encore, mes photographie de rue prisent à travers le monde.',
+                        'Sur ce site, vous pourrez découvrir mes différents projets photographiques, qui sont principalement axés sur l\'environnement urbain. Actuellement vous y découvrirez, « Street view » qui est motivé par le travail de Doug Rickard et Jon Rafman, « Confinement » qui raconte mon confinement ou encore « Street » qui présente, sans vraie structure encore, mes photographies de rue prisent à travers le monde.',
                         'N\'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez en savoir plus sur mes projets.'
                     ]
                 }
