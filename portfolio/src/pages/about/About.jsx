@@ -35,8 +35,11 @@ const About = () => {
                     text.map((item) => {
                         return (
                             <div className="about">
-                                <h1>{item.title}</h1>
-                                <h2>{item.message}</h2>
+                                <h1>{item.title2}</h1>
+                                <p>{item.message[0]}</p>
+                                <p>{item.message[1]}</p>
+                                <p>{item.message[2]}</p>
+                                <p>{item.message[3]}</p>
                             </div>
                         )
                     })
