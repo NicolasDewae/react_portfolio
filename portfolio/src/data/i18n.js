@@ -1,5 +1,5 @@
 // translate var -> true = fr, false = en 
-export const authorName = "Nicolas De Waegenaere";
+export const authorName = "Nicolas De Wagner";
 
 export const navLink = [
     {
@@ -99,15 +99,27 @@ export const about = [
         fr: [
                 {
                     id: 1,
-                    title: 'A propos',
-                    message: 'Je suis développeur web et photographe passionné.',
+                    title1: 'A propos',
+                    title2: 'Je suis développeur web et photographe passionné.',
+                    message: [
+                        'Je m\'appelle '+ authorName +', et je suis un photographe basé à Lille.', 
+                        'J\'ai créé ce site pour présenter mes projets photographiques. Mon objectif est de partager ma passion pour la photographie',
+                        'Sur ce site, vous pourrez découvrir mes différents projets photographiques, qui sont principalement axés sur l\'environnement urbain. Actuellement vous y découvrirez, « Street view » qui est motivé par le travail de Doug Rickard et Jon Rafman, « Confinement » qui raconte mon confinement ou encore « Street » qui présente, sans vraie structure encore, mes photographie de rue prisent à travers le monde.',
+                        'N\'hésitez pas à me contacter si vous avez des questions ou si vous souhaitez en savoir plus sur mes projets.'
+                    ]
                 }
         ],
         en: [
                 {
                     id: 1,
-                    title: 'About',
-                    message: 'I am a web developer and passionate about photography.',
+                    title1: 'About',
+                    title2: 'I am a web developer and passionate about photography.',
+                    message: [
+                        'My name is '+ authorName +', and I am a photographer based in Lille.',
+                        'I created this site to present my photographic projects. My goal is to share my passion for photography',
+                        'On this site, you can discover my different photographic projects, which are mainly focused on urban environments. Currently you will discover, "Street view" which is motivated by the work of Doug Rickard and Jon Rafman, "Confinement" which tells my confinement or "Street" which presents, without real structure yet, my street photography taken around the world.',
+                        'Do not hesitate to contact me if you have any questions or if you want to know more about my projects.'
+                    ]
                 }
         ],
     }
@@ -123,7 +135,7 @@ export const footer = [
                     button: "S'inscrire",
                     copyright: '© 2022 - Développé par ' + authorName,
                     contextTitle: "Contexte de ce portfolio",
-                    contextMessage: "Cette application a été développée par moi-même, "+ authorName +", étudiant en développement web. Elle a été réalisée dans le but de présenter mon travail photographique ainsi que mes compétences en ReactJs. Je me suis fortement inspiré du site du photographe André D.Wagner, dont j'apprécie le travail. Je vous invite à visiter son site en cliquant sur le lien.",
+                    contextMessage: "Cette application a été développée par moi-même, "+ authorName +", développeur web. Elle a été réalisée dans le but de présenter mon travail photographique ainsi que mes compétences en ReactJs. Je me suis fortement inspiré du site du photographe André D.Wagner, dont j'apprécie le travail. Je vous invite à visiter son site en cliquant sur le lien.",
                 }
         ],
         en: [
@@ -134,7 +146,7 @@ export const footer = [
                     button: "Subscribe",
                     copyright: '© 2022 - Developed by ' + authorName,
                     contextTitle: "Context of this portfolio",
-                    contextMessage: "This application was developed by myself, "+ authorName +", a student in web development. It was made in order to both present my photographic work and my skills in ReactJs. I was strongly inspired by the website of the photographer André D.Wagner, whose work I appreciate. I invite you to visit his site by clicking on the link.",
+                    contextMessage: "This application was developed by myself, "+ authorName +", web developpeur. It was made in order to both present my photographic work and my skills in ReactJs. I was strongly inspired by the website of the photographer André D.Wagner, whose work I appreciate. I invite you to visit his site by clicking on the link.",
                 }
         ],
     }
