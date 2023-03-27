@@ -7,6 +7,10 @@
     margin: 10px;
 }
 
+.card-link {
+    text-decoration: none;
+}
+
 .preview-project .picture {
     display: flex;
     justify-content: center;
@@ -22,8 +26,7 @@
 
 .preview-project .title h3 {
     color: #000;
-    text-decoration: none;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .preview-project:hover {

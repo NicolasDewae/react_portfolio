@@ -6,7 +6,7 @@ const Projects = ({ pathway, title, picture }) => {
 
     return (
         <>
-            <Link to={"/project/" + pathway}>
+            <Link className="card-link" to={"/project/" + pathway}>
                 <div className="preview-project">
                     <div className="title">
                         <h3>{title}</h3>
