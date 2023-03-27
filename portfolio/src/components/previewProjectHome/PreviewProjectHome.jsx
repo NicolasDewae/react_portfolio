@@ -14,10 +14,14 @@ const PreviewProjectHome = ({
     
     return (
         <>
-            <div className="preview">
+        <div className='preview-container'>
+
+            <div className="preview-containt">
                 <div className="picture">
                     <img src={picture} alt="photo du projet" />
                 </div>
+            </div>
+            <div className='projectButton'>
                 <div className="title">
                     <h2>{title}</h2>
                 </div>
@@ -27,6 +31,7 @@ const PreviewProjectHome = ({
                     </a>
                 </Link>
             </div>
+        </div>
             <div>
                 <Split />
             </div>
