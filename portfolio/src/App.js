@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import projectsData from './data/projectsData';
 import ProjectsListHome from "./components/projectListHome/ProjectsListHome";
 import ScrollToTopBtn from "./components/scrollToTopBtn/ScrollToTopBtn";
+import Main from "./components/main/Main";
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
           </p>
       </button>
       <Navbar data={translate} />
+      <Main data={translate} />
       <ProjectsListHome data={translate} projects={projectsData} />
       <ScrollToTopBtn />
       <Footer data={translate} />
