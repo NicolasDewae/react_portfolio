@@ -1,14 +1,10 @@
 // translate var -> true = fr, false = en 
 export const authorName = "Nicolas De Wagner";
+export const year = "2023";
 
 export const navLink = [
     {
         fr: [
-                {
-                    id: 1,
-                    title: 'Accueil',
-                    pathway: '/',
-                },
                 {
                     id: 2,
                     title: 'Projets',
@@ -31,11 +27,6 @@ export const navLink = [
                 }
         ],
         en: [
-                {
-                    id: 1,
-                    title: 'Home',
-                    pathway: '/',
-                },
                 {
                     id: 2,
                     title: 'Works',
@@ -133,7 +124,7 @@ export const footer = [
                     message: "Pour être tenu au courant des projets à venir",
                     placerHolder: "Votre adresse email",
                     button: "S'inscrire",
-                    copyright: '© 2022 - Développé par ' + authorName,
+                    copyright: '© ' + year + ' - Développé par ' + authorName,
                     contextTitle: "Contexte de ce portfolio",
                     contextMessage: "Cette application a été développée par moi-même, "+ authorName +", développeur web. Elle a été réalisée dans le but de présenter mon travail photographique ainsi que mes compétences en ReactJs. Je me suis fortement inspiré du site du photographe André D.Wagner, dont j'apprécie le travail. Je vous invite à visiter son site en cliquant sur le lien.",
                 }
@@ -144,7 +135,7 @@ export const footer = [
                     message: "To be informed of upcoming projects",
                     placerHolder: "Your email address",
                     button: "Subscribe",
-                    copyright: '© 2022 - Developed by ' + authorName,
+                    copyright: '© ' + year + ' - Developed by ' + authorName,
                     contextTitle: "Context of this portfolio",
                     contextMessage: "This application was developed by myself, "+ authorName +", web developpeur. It was made in order to both present my photographic work and my skills in ReactJs. I was strongly inspired by the website of the photographer André D.Wagner, whose work I appreciate. I invite you to visit his site by clicking on the link.",
                 }
