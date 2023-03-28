@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './PreviewProjectHome.css';
 import { Link } from 'react-router-dom';
-import Split from '../split/Split';
 
 const PreviewProjectHome = ({ projects, data }) => {
     
@@ -39,8 +38,8 @@ const PreviewProjectHome = ({ projects, data }) => {
                     <p>+</p>
                 </div>
             </section>
-            <div>
-                <Split />
+            <div className='seperate'>
+                <span></span>
             </div>
         </>
     );
