@@ -74,6 +74,10 @@ p {
   display: inline-block;
 }
 
+button {
+  cursor: pointer;
+}
+
 .button:hover {
   background-color: black;
   color: white;
