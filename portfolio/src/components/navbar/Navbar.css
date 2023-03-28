@@ -1,6 +1,7 @@
 .header {
     display: flex;
     margin: 1% 0 4% 0;
+    justify-content: space-between;
 }
 
 .title {
@@ -86,6 +87,10 @@ nav ul {
 
     nav {
         display: block;
+    }
+
+    .links li:first-child {
+        margin: 0;
     }
 
     /* hidden menu start */
