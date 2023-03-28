@@ -11,7 +11,7 @@ const Footer = (translate) => {
         <>
             <footer className="footer">
                 <div className="input_container">
-                    <div>
+                    <div className='text'>
                         {footer.map((text) => {
                             text = translate.data ? text.fr : text.en;
                             return (
@@ -25,7 +25,7 @@ const Footer = (translate) => {
                             )
                         })}
                     </div>
-                    <div>
+                    <div className='input'>
                         <InputMail />
                     </div>
                 </div>

@@ -1,16 +1,27 @@
 .footer {
-    margin: 70px 0 70px 0;
+    margin: 0 0 70px 0;
     padding: 0;
     display: block;
-    justify-content: space-between;
 }
 
 .footer .input_container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12% 0;
 }
 
 .footer .notice_container {
     display: flex;
+}
+
+.footer .text {
+    width: 50%;
+}
+
+.footer .input {
+    width: 50%;
+    margin: 0;
 }
 
 .footer .notice_container a {
@@ -48,6 +59,14 @@
 @media screen and (max-width: 1007px) {
     .footer {
         display: block;
+    }
+
+    .footer .text {
+        width: 100%;
+    }
+
+    .footer .input {
+        width: 100%;
     }
 }
 
