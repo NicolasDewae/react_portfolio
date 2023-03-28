@@ -1,6 +1,31 @@
 .preview-container {
+    display: flex;
+    margin: 0;
+    align-items: center;
     justify-content: space-between;
-    /* align-items: center; */
+}
+
+.preview-container .button {
+    visibility: hidden;
+    display: none;
+}
+
+.projectButton-flex .title h2 {
+    margin: 0;
+}
+
+.plus {
+    margin: 0;
+}
+
+.plus p {
+    font-size: 50px;
+    margin: 0;
+}
+
+/* Start hover */
+.preview-container-hover {
+    justify-content: space-between;
     display: flex;
 }
 
@@ -20,15 +45,23 @@
     object-fit: cover;
 }
 
-.projectButton {
-    width: 30%;
+.projectButton-block {
+    display: block;
+    margin: auto 0;
+    width: 35%;
 }
 
-.projectButton a {
+.projectButton-block a {
     text-decoration: none;
     margin: 0;
 }
 
+.minus {
+    visibility: hidden;
+    display: none;
+}
+
+/* End hover */
 @media screen and (max-width: 1200px) {
     .preview-containt .title {
         font-size: 19px;
@@ -36,7 +69,7 @@
 }
 
 @media screen and (max-width: 1070px) {
-    .preview-container {
+    .preview-container-hover {
         display: block;
     }
     .preview-containt .picture {
