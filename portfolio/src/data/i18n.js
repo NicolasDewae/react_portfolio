@@ -18,7 +18,7 @@ export const navLink = [
                 {
                     id: 4,
                     title: 'Articles',
-                    pathway: '/blog',
+                    pathway: 'https://blog.nicolasdewagner.fr/',
                 },
                 {
                     id: 5,
@@ -40,7 +40,7 @@ export const navLink = [
                 {
                     id: 4,
                     title: 'Blog',
-                    pathway: '/blog',
+                    pathway: 'https://blog.nicolasdewagner.fr/',
                 },
                 {
                     id: 5,
