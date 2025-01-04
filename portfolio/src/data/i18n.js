@@ -235,24 +235,3 @@ export const notFound = [
         ],
     }
 ]
-
-export const blog = [
-    {
-        fr: [
-                {
-                    id: 1,
-                    title: 'Blog',
-                    message: 'Je suis en train de travailler sur ce blog. Il sera bientôt disponible.',
-                    button: 'Lire l\'article',
-                }
-        ],
-        en: [
-                {
-                    id: 1,
-                    title: 'Blog',
-                    message: 'I am working on this blog. It will be available soon.',
-                    button: 'Read the article',
-                }
-        ],
-    }
-]

@@ -13,6 +13,7 @@ import Canaries from './pages/project/canaries/Canaries';
 import Street from './pages/project/street/Street';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Blog from './pages/blog/Blog';
+import ArticleDetail from './pages/articleDetail/ArticleDetail';
 import NotFound from './pages/notFound/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,6 +39,7 @@ root.render(
 
           {/* Blog routes */}
           <Route path="/blog" element={ <Blog /> } />
+          <Route path="/blog/:slug" element={<ArticleDetail />} />
 
         </Routes>
       </ScrollToTop>
