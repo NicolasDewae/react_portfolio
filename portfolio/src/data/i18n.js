@@ -18,7 +18,7 @@ export const navLink = [
                 {
                     id: 4,
                     title: 'Articles',
-                    pathway: 'https://blog.nicolasdewagner.fr/',
+                    pathway: '/blog',
                 },
                 {
                     id: 5,
@@ -40,7 +40,7 @@ export const navLink = [
                 {
                     id: 4,
                     title: 'Blog',
-                    pathway: 'https://blog.nicolasdewagner.fr/',
+                    pathway: '/blog',
                 },
                 {
                     id: 5,
@@ -177,7 +177,7 @@ export const projects = [
         fr: [
                 {
                     id: 1,
-                    streetview: 'Street view est une série photographique qui a démarré pendant le confinement. Le but premier était de repérer des lieux à photographier une fois notre liberté de déplacement retrouvée. Mais lors de mes visites virtuelles, j\ai commencé à capturer les scènes qui me marquaient et étant inspiré par le travail de Doug Rickard et Jon Rafman, j\'ai commencé à créer des images à partir de ces scènes.',
+                    streetview: 'Street view est une série photographique qui a démarré pendant le confinement. Le but premier était de repérer des lieux à photographier une fois notre liberté de déplacement retrouvée. Mais lors de mes visites virtuelles, j\'ai commencé à capturer les scènes qui me marquaient et étant inspiré par le travail de Doug Rickard et Jon Rafman, j\'ai commencé à créer des images à partir de ces scènes.',
                 },
                 {
                     id: 2,

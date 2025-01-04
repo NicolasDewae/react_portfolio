@@ -14,8 +14,6 @@ import Street from './pages/project/street/Street';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Blog from './pages/blog/Blog';
 import NotFound from './pages/notFound/NotFound';
-import Her from './pages/articles/her/Her';
-import Drive from './pages/articles/drive/Drive';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,8 +38,6 @@ root.render(
 
           {/* Blog routes */}
           <Route path="/blog" element={ <Blog /> } />
-          <Route path="/blog/drive" element={ <Drive /> } />
-          <Route path="/blog/her" element={ <Her /> } />
 
         </Routes>
       </ScrollToTop>
