@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import Split from "../../components/split/Split";
 import ScrollToTopBtn from "../../components/scrollToTopBtn/ScrollToTopBtn";
-import { API_WP_BLOG } from "../../data/globalVar";
+import { API_WP_BLOG, MAX_NB_ITEMS } from "../../data/globalVar";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -23,24 +23,33 @@ const Blog = () => {
   const [page, setPage] = useState(1); // Page actuelle
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [totalPages, setTotalPages] = useState(0); // Nombre total de pages
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
         // Récupération des articles
-        const response = await axios.get(API_WP_BLOG + "/posts?per_page=5" + "&page=" + page);
+        const response = await axios.get(
+          API_WP_BLOG + "/posts?per_page=" + MAX_NB_ITEMS + "&page=" + page
+        );
+
+        // Détermination du nombre total de pages
+        const totalPagesHeader = response.headers["x-wp-totalpages"];
+        setTotalPages(Number(totalPagesHeader));
+
         // Récupération des images
         const postsWithImages = await Promise.all(
           response.data.map(async (post) => {
             if (post.featured_media) {
               const mediaResponse = await axios.get(
-                API_WP_BLOG + "/media/" + post.featured_media
+                `${API_WP_BLOG}/media/${post.featured_media}`
               );
               return { ...post, featured_image: mediaResponse.data.source_url };
             }
             return { ...post, featured_image: null };
           })
         );
+
         setPosts(postsWithImages);
         setLoading(false);
       } catch (error) {
@@ -98,16 +107,23 @@ const Blog = () => {
         ))}
 
         {/* Navigation des pages */}
-        <div className="pagination">
-          <button
-            disabled={page === 1} // Désactiver le bouton précédent sur la première page
-            onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
-          >
-            Précédent
-          </button>
-          <span className="responsive-text">Page {page}</span>
-          <button onClick={() => setPage((prev) => prev + 1)}>Suivant</button>
-        </div>
+        {totalPages > 1 && ( // Afficher la pagination seulement s'il y a plus d'une page
+          <div className="pagination">
+            <button
+              disabled={page === 1} // Désactiver le bouton précédent sur la première page
+              onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
+            >
+              Précédent
+            </button>
+            <span className="responsive-text">Page {page}</span>
+            <button
+              disabled={page === totalPages} // Désactiver le bouton suivant sur la dernière page
+              onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))}
+            >
+              Suivant
+            </button>
+          </div>
+        )}
       </div>
       <ScrollToTopBtn />
       <Footer data={translate} />
