@@ -20,6 +20,7 @@ const Blog = () => {
     setTranslate(!translate);
   };
 
+  const [page, setPage] = useState(1); // Page actuelle
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -27,7 +28,7 @@ const Blog = () => {
     const fetchPosts = async () => {
       try {
         // Récupération des articles
-        const response = await axios.get( API_WP_BLOG + "/posts?per_page=5");
+        const response = await axios.get(API_WP_BLOG + "/posts?per_page=5" + "&page=" + page);
         // Récupération des images
         const postsWithImages = await Promise.all(
           response.data.map(async (post) => {
@@ -49,7 +50,7 @@ const Blog = () => {
     };
 
     fetchPosts();
-  }, []);
+  }, [page]);
 
   if (loading) {
     return (
@@ -59,7 +60,7 @@ const Blog = () => {
           <p className="translate">{translate ? "Fr" : "En"}</p>
         </button>
         <Navbar data={translate} />
-        <p>Chargement des articles...</p>
+        <h2>Chargement des articles...</h2>
         <ScrollToTopBtn />
         <Footer data={translate} />
       </>
@@ -76,16 +77,37 @@ const Blog = () => {
       <div>
         <h1>Articles</h1>
         {posts.map((post) => (
-          <div key={post.id}>
+          <div key={post.slug}>
             <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
             {post.featured_image && (
-              <img src={post.featured_image} alt={post.title.rendered} />
+              <img
+                className="responsive-image"
+                src={post.featured_image}
+                alt={post.title.rendered}
+              />
             )}
-            <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-            <Link to={`/article/${post.id}`}>Lire l'article complet</Link>
+            <p
+              className="responsive-text"
+              dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
+            />
+            <Link to={`/blog/${post.slug}`}>
+              <a className="button">Lire l'article</a>
+            </Link>
             <Split data={translate} />
           </div>
         ))}
+
+        {/* Navigation des pages */}
+        <div className="pagination">
+          <button
+            disabled={page === 1} // Désactiver le bouton précédent sur la première page
+            onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
+          >
+            Précédent
+          </button>
+          <span className="responsive-text">Page {page}</span>
+          <button onClick={() => setPage((prev) => prev + 1)}>Suivant</button>
+        </div>
       </div>
       <ScrollToTopBtn />
       <Footer data={translate} />

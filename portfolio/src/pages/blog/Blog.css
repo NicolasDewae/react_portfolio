@@ -1,0 +1,40 @@
+.pagination {
+  display: flex; /* Dispose les éléments en ligne */
+  justify-content: center; /* Centre les boutons horizontalement */
+  align-items: center; /* Aligne verticalement si nécessaire */
+  gap: 10px; /* Espacement entre les boutons */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc; /* Couleur grise pour les boutons désactivés */
+  cursor: not-allowed; /* Change le curseur pour les boutons désactivés */
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 600px) {
+  .pagination {
+    gap: 5px; /* Réduit l'espacement entre les éléments */
+  }
+
+  .pagination button {
+    font-size: 15px;
+    padding: 4px 12px;
+    margin: 2px 0 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    flex-direction: column; /* Passe en colonne pour les très petits écrans */
+    gap: 5px; /* Réduit l'espacement entre les éléments */
+  }
+
+  .pagination button {
+    padding: 8px 10px; /* Réduit la taille des boutons */
+    font-size: 0.9rem; /* Réduit la taille de la police */
+  }
+
+  .pagination span {
+    font-size: 0.9rem; /* Réduit la taille du texte */
+  }
+}
