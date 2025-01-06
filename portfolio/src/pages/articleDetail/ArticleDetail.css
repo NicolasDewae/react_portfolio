@@ -12,6 +12,14 @@
   }
 }
 
+iframe {
+  max-width: 100%; /* Limite la largeur à 100% du conteneur parent */
+  height: auto; /* Maintient le ratio de la vidéo */
+  margin: 0 auto; /* Centre la vidéo */
+  display: block; /* Supprime tout espace résiduel inline */
+  aspect-ratio: 16 / 9; /* Définit le ratio */
+}
+
 /* Texte pour très petits écrans (mobiles) */
 @media (max-width: 480px) {
   .responsive-text {
