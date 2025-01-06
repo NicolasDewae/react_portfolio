@@ -26,9 +26,9 @@ body {
 
   /* mobile */
   --mobilePSize: 0.9rem;
-  --mobileH1Size: 2.5rem;
-  --mobileH2Size: 2rem;
-  --mobileH3Size: 1.5rem;
+  --mobileH1Size: 2rem;
+  --mobileH2Size: 1.5rem;
+  --mobileH3Size: 1rem;
 
 }
 
@@ -99,36 +99,46 @@ button {
 
 @media screen and (max-width: 1200px) {
   h2 {
-      font-size: 1.8rem;
+      font-size: var(--tabletH2Size);
+  }
+  h3 {
+    font-size: var(--tabletH3Size);
   }
 }
 
 
 @media screen and (max-width: 1007px) {
   h1{
-    font-size: 4rem;
+    font-size: var(--tabletH1Size);
   }
-  h2 {
-    font-size: 2rem;
+  p {
+    font-size: var(--tabletPSize);
   }
 }
 
 @media screen and (max-width: 700px) {
-  h1{
-    font-size: 3rem;
-  }
+
 }
 
 @media screen and (max-width: 600px) {
   .button {
-    font-size: 15px;
-    padding: 4px 12px;
+    font-size: 10px;
+    padding: 2px 5px;
     margin: 2px 0 0 10px;
+  }
+  p {
+    font-size: var(--mobilePSize);
   }
 }
 
 @media screen and (max-width: 500px) {
   h1{
-      font-size: 2rem;
+      font-size: var(--mobileH1Size);
+  }
+  h2 {
+    font-size: var(--mobileH2Size);
+  }
+  h3 {
+    font-size: var(--mobileH3Size);
   }
 }
