@@ -1,6 +1,6 @@
 // translate var -> true = fr, false = en 
 export const authorName = "Nicolas De Wagner";
-export const year = "2023";
+export const year = "2025";
 
 export const navLink = [
     {

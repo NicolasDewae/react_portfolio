@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Works from './pages/works/Works';
@@ -15,34 +15,52 @@ import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Blog from './pages/blog/Blog';
 import ArticleDetail from './pages/articleDetail/ArticleDetail';
 import NotFound from './pages/notFound/NotFound';
+import { GA_TRACKING_ID } from "./data/globalVar";
+import ReactGA from "react-ga4";
+
+{/* Initialisation Google Analytics avec ton ID GA4 */}
+ReactGA.initialize(GA_TRACKING_ID);
+
+{/* Composant pour envoyer un "pageview" à chaque changement d'URL */}
+function AnalyticsTracker({ children }) {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
+
+  return children;
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <ScrollToTop>
-        <Routes>
-          {/* Main routes */}
-          <Route path="/" element={ <App /> } />
-          <Route path="/about" element={ <About /> } />
-          <Route path="/works" element={ <Works /> } />
-          <Route path="/contact" element={ <Contact /> } />
+      <AnalyticsTracker>
+        <ScrollToTop>
+          <Routes>
+            {/* Main routes */}
+            <Route path="/" element={ <App /> } />
+            <Route path="/about" element={ <About /> } />
+            <Route path="/works" element={ <Works /> } />
+            <Route path="/contact" element={ <Contact /> } />
+            
+            {/* Projects routes */}
+            <Route path="/project/streetview" element={ <StreetView /> } />
+            <Route path="/project/confinement" element={ <Confinement /> } />
+            <Route path="/project/canaries" element={ <Canaries /> } />
+            <Route path="/project/street" element={ <Street /> } />
           
-          {/* Projects routes */}
-          <Route path="/project/streetview" element={ <StreetView /> } />
-          <Route path="/project/confinement" element={ <Confinement /> } />
-          <Route path="/project/canaries" element={ <Canaries /> } />
-          <Route path="/project/street" element={ <Street /> } />
-        
-          {/* 404 */}
-          <Route path='*' element={<NotFound />}/>
+            {/* 404 */}
+            <Route path='*' element={<NotFound />}/>
 
-          {/* Blog routes */}
-          <Route path="/blog" element={ <Blog /> } />
-          <Route path="/blog/:slug" element={<ArticleDetail />} />
+            {/* Blog routes */}
+            <Route path="/blog" element={ <Blog /> } />
+            <Route path="/blog/:slug" element={<ArticleDetail />} />
 
-        </Routes>
-      </ScrollToTop>
+          </Routes>
+        </ScrollToTop>
+      </AnalyticsTracker>
     </Router>
   </React.StrictMode>
 );

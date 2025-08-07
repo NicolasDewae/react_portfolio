@@ -6,6 +6,8 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import Split from "../../components/split/Split";
 import ScrollToTopBtn from "../../components/scrollToTopBtn/ScrollToTopBtn";
+import { Helmet } from "react-helmet";
+ 
 
 import "./ArticleDetail.css";
 import NotFound from "../notFound/NotFound";
@@ -67,6 +69,14 @@ const ArticleDetail = () => {
 
   return (
     <>
+    {/* Helmet SEO */}
+      <Helmet>
+        <title>{article.title.rendered} | Nicolas De Wagner</title>
+        <meta name="description" content={article.excerpt?.rendered?.replace(/(<([^>]+)>)/gi, "").slice(0, 160)} />
+        <link rel="canonical" href={`https://nicolasdewagner.fr/articles/${slug}`} />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      
       {/* Translation button */}
       <button className="translateBtn" onClick={handleTranslate}>
         <p className="translate">{translate ? "Fr" : "En"}</p>
