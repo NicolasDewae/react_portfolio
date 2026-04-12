@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProjectsListHome.css";
 import PreviewProjectHome from "../previewProjectHome/PreviewProjectHome";
 import { previewProject } from "../../data/i18n";
 
 const ProjectsListHome = ({ data, projects }) => {
+
+    const [openProjectId, setOpenProjectId] = useState(null);
+
     return (
         <>
         <div className="project-list-home">
@@ -13,7 +16,15 @@ const ProjectsListHome = ({ data, projects }) => {
                     return (
                         projects.map((project) => {
                             return (
-                                <PreviewProjectHome projects={project} data={translate} />
+                                <PreviewProjectHome
+                                    key={project.id}
+                                    projects={project}
+                                    data={translate}
+                                    isOpen={openProjectId === project.id}
+                                    onToggle={() => setOpenProjectId(
+                                        openProjectId === project.id ? null : project.id
+                                    )}
+                                />
                             )
                         })
                     );

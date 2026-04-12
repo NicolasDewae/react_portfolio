@@ -2,22 +2,16 @@ import React, { useState } from 'react';
 import './PreviewProjectHome.css';
 import { Link } from 'react-router-dom';
 
-const PreviewProjectHome = ({ projects, data }) => {
-    
-    const [previewClass, setClassName] = useState('preview-container');
-    const [iconClass, setIconClass] = useState('plus');
-    const [projectButton, setProjectButton] = useState('projectButton-flex');
+const PreviewProjectHome = ({ projects, data, isOpen, onToggle }) => {
 
-    const changeClass = () => {
-        setClassName(previewClass === 'preview-container' ? 'preview-container-hover' : 'preview-container');
-        setIconClass(iconClass === 'plus' ? 'minus' : 'plus');
-        setProjectButton(projectButton === 'projectButton-flex' ? 'projectButton-block' : 'projectButton-flex');
-    };
+    const previewClass = isOpen ? 'preview-container-hover' : 'preview-container';
+    const iconClass = isOpen ? 'minus' : 'plus';
+    const projectButton = isOpen ? 'projectButton-block' : 'projectButton-flex';
 
     return (
         <>
-            <section className={previewClass} onClick={changeClass}>
-                {previewClass === 'preview-container-hover' &&
+            <section className={previewClass} onClick={onToggle}>
+                {isOpen &&
                     <div className="preview-containt">
                         <div className="picture">
                             <img src={projects.picture} alt="photo du projet" />
@@ -29,9 +23,7 @@ const PreviewProjectHome = ({ projects, data }) => {
                         <h2>{projects.title}</h2>
                     </div>
                     <Link to={`/project/${projects.pathway}`}>
-                        <a className="button">
-                            {data[0].button}
-                        </a>
+                        <a className="button">{data[0].button}</a>
                     </Link>
                 </div>
                 <div className={iconClass}>
