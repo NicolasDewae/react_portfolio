@@ -1,32 +1,32 @@
 // src/pages/about/About.tsx
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Split from '../../components/split';
+import ScrollReveal from '../../components/ScrollReveal';
 import ScrollToTopBtn from '../../components/scrollToTopBtn';
-import TranslateButton from '../../components/translateButton';
 import useTranslate from '../../hooks/useTranslate';
 import { about } from '../../data/i18n';
-import './About.css';
+import styles from './About.module.css';
 
 const About = () => {
   const { translate, handleTranslate } = useTranslate();
   const item = translate ? about.fr[0] : about.en[0];
 
   return (
-    <>
-      <TranslateButton translate={translate} onTranslate={handleTranslate} />
-      <Navbar data={translate} />
-      <div className="about">
-        <h1>{item.title2}</h1>
-        <p>{item.message[0]}</p>
-        <p>{item.message[1]}</p>
-        <p>{item.message[2]}</p>
-        <p>{item.message[3]}</p>
+    <div className={styles.page}>
+      <Navbar translate={translate} onTranslate={handleTranslate} />
+      <div className={styles.hero}>
+        <h1 className={styles.title}>{item.title2}</h1>
       </div>
-      <Split />
+      <div className={styles.content}>
+        {item.message.map((paragraph, i) => (
+          <ScrollReveal key={i} delay={(Math.min(i, 3)) as 0 | 1 | 2 | 3}>
+            <p className={styles.paragraph}>{paragraph}</p>
+          </ScrollReveal>
+        ))}
+      </div>
       <ScrollToTopBtn />
       <Footer data={translate} />
-    </>
+    </div>
   );
 };
 

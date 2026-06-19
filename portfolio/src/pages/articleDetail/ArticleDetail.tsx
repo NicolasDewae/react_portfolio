@@ -1,17 +1,15 @@
 // src/pages/articleDetail/ArticleDetail.tsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Split from '../../components/split';
 import ScrollToTopBtn from '../../components/scrollToTopBtn';
-import TranslateButton from '../../components/translateButton';
 import NotFound from '../notFound';
 import useTranslate from '../../hooks/useTranslate';
 import { API_WP_BLOG } from '../../data/globalVar';
-import './ArticleDetail.css';
+import styles from './ArticleDetail.module.css';
 
 interface FeaturedMedia {
   source_url: string;
@@ -51,13 +49,11 @@ const ArticleDetail = () => {
 
   if (loading) {
     return (
-      <>
-        <TranslateButton translate={translate} onTranslate={handleTranslate} />
-        <Navbar data={translate} />
-        <h2>Chargement de l'article...</h2>
-        <ScrollToTopBtn />
+      <div className={styles.page}>
+        <Navbar translate={translate} onTranslate={handleTranslate} />
+        <p className={styles.loading}>Chargement...</p>
         <Footer data={translate} />
-      </>
+      </div>
     );
   }
 
@@ -76,27 +72,30 @@ const ArticleDetail = () => {
         <link rel="canonical" href={`https://nicolasdewagner.fr/articles/${slug}`} />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <TranslateButton translate={translate} onTranslate={handleTranslate} />
-      <Navbar data={translate} />
-      <div>
-        <h1 dangerouslySetInnerHTML={{ __html: article.title.rendered }} />
-        {featuredImage && (
-          <div>
+      <div className={styles.page}>
+        <Navbar translate={translate} onTranslate={handleTranslate} />
+        <div className={styles.hero}>
+          <h1
+            className={styles.title}
+            dangerouslySetInnerHTML={{ __html: article.title.rendered }}
+          />
+        </div>
+        <div className={styles.content}>
+          {featuredImage && (
             <img
-              className="responsive-image"
               src={featuredImage}
               alt={article.title.rendered}
+              className={styles.featuredImage}
             />
-          </div>
-        )}
-        <div
-          className="responsive-text"
-          dangerouslySetInnerHTML={{ __html: article.content.rendered }}
-        />
+          )}
+          <div
+            className={styles.body}
+            dangerouslySetInnerHTML={{ __html: article.content.rendered }}
+          />
+        </div>
+        <ScrollToTopBtn />
+        <Footer data={translate} />
       </div>
-      <ScrollToTopBtn />
-      <Split />
-      <Footer data={translate} />
     </>
   );
 };

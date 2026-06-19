@@ -1,15 +1,14 @@
 // src/pages/blog/Blog.tsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Split from '../../components/split';
+import ScrollReveal from '../../components/ScrollReveal';
 import ScrollToTopBtn from '../../components/scrollToTopBtn';
-import TranslateButton from '../../components/translateButton';
 import useTranslate from '../../hooks/useTranslate';
 import { API_WP_BLOG, MAX_NB_ITEMS } from '../../data/globalVar';
-import './Blog.css';
+import styles from './Blog.module.css';
 
 interface Post {
   slug: string;
@@ -32,8 +31,7 @@ const Blog = () => {
         const response = await axios.get(
           `${API_WP_BLOG}/posts?per_page=${MAX_NB_ITEMS}&page=${page}`
         );
-        const totalPagesHeader = response.headers['x-wp-totalpages'];
-        setTotalPages(Number(totalPagesHeader));
+        setTotalPages(Number(response.headers['x-wp-totalpages']));
 
         const postsWithImages = await Promise.all(
           response.data.map(async (post: Post) => {
@@ -58,65 +56,69 @@ const Blog = () => {
     fetchPosts();
   }, [page]);
 
-  if (loading) {
-    return (
-      <>
-        <TranslateButton translate={translate} onTranslate={handleTranslate} />
-        <Navbar data={translate} />
-        <h2>Chargement des articles...</h2>
-        <ScrollToTopBtn />
-        <Footer data={translate} />
-      </>
-    );
-  }
-
   return (
-    <>
-      <TranslateButton translate={translate} onTranslate={handleTranslate} />
-      <Navbar data={translate} />
-      <div>
-        <h1>Articles</h1>
-        {posts.map((post) => (
-          <div key={post.slug}>
-            <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-            {post.featured_image && (
-              <img
-                className="responsive-image"
-                src={post.featured_image}
-                alt={post.title.rendered}
-              />
-            )}
-            <p
-              className="responsive-text"
-              dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
-            />
-            <Link className="button" to={`/blog/${post.slug}`}>
-              Lire l'article
-            </Link>
-            <Split />
-          </div>
-        ))}
-        {totalPages > 1 && (
-          <div className="pagination">
-            <button
-              disabled={page === 1}
-              onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
-            >
-              Précédent
-            </button>
-            <span className="responsive-text">Page {page}</span>
-            <button
-              disabled={page === totalPages}
-              onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))}
-            >
-              Suivant
-            </button>
-          </div>
-        )}
+    <div className={styles.page}>
+      <Navbar translate={translate} onTranslate={handleTranslate} />
+      <div className={styles.hero}>
+        <h1 className={styles.title}>Articles</h1>
       </div>
+
+      {loading ? (
+        <p className={styles.loading}>Chargement...</p>
+      ) : (
+        <div className={styles.list}>
+          {posts.map((post) => (
+            <ScrollReveal key={post.slug}>
+              <article className={styles.article}>
+                {post.featured_image && (
+                  <img
+                    src={post.featured_image}
+                    alt={post.title.rendered}
+                    className={styles.articleImage}
+                  />
+                )}
+                <div className={styles.articleBody}>
+                  <h2
+                    className={styles.articleTitle}
+                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                  />
+                  <p
+                    className={styles.articleExcerpt}
+                    dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
+                  />
+                  <Link to={`/blog/${post.slug}`} className={styles.readMore}>
+                    {translate ? 'Lire l\'article' : 'Read article'} →
+                  </Link>
+                </div>
+              </article>
+            </ScrollReveal>
+          ))}
+
+          {totalPages > 1 && (
+            <div className={styles.pagination}>
+              <button
+                className={styles.paginationBtn}
+                disabled={page === 1}
+                onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
+              >
+                ←
+              </button>
+              <span className={styles.paginationPage}>{page} / {totalPages}</span>
+              <button
+                className={styles.paginationBtn}
+                disabled={page === totalPages}
+                onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))}
+              >
+                →
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+
       <ScrollToTopBtn />
       <Footer data={translate} />
-    </>
+    </div>
   );
 };
 

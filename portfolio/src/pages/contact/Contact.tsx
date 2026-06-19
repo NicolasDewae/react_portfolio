@@ -1,35 +1,29 @@
 // src/pages/contact/Contact.tsx
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Split from '../../components/split';
-import ScrollToTopBtn from '../../components/scrollToTopBtn';
 import ContactForm from '../../components/contactForm';
-import TranslateButton from '../../components/translateButton';
+import ScrollToTopBtn from '../../components/scrollToTopBtn';
 import useTranslate from '../../hooks/useTranslate';
 import { contact } from '../../data/i18n';
-import './Contact.css';
+import styles from './Contact.module.css';
 
 const Contact = () => {
   const { translate, handleTranslate } = useTranslate();
   const item = translate ? contact.fr[0] : contact.en[0];
 
   return (
-    <>
-      <TranslateButton translate={translate} onTranslate={handleTranslate} />
-      <Navbar data={translate} />
-      <div>
-        <h1>{item.title}</h1>
+    <div className={styles.page}>
+      <Navbar translate={translate} onTranslate={handleTranslate} />
+      <div className={styles.hero}>
+        <h1 className={styles.title}>{item.title}</h1>
+        <p className={styles.subtitle}>{item.text}</p>
       </div>
-      <div className="contact">
-        <div>
-          <h2>{item.text}</h2>
-        </div>
+      <div className={styles.formWrapper}>
         <ContactForm data={translate} />
       </div>
-      <Split />
       <ScrollToTopBtn />
       <Footer data={translate} />
-    </>
+    </div>
   );
 };
 

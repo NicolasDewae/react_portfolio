@@ -1,0 +1,30 @@
+/* src/styles/projectPage.module.css */
+.page {
+  padding-top: 100px; /* offset navbar fixe */
+}
+
+.hero {
+  padding: var(--space-lg) var(--gutter) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--color-text);
+}
+
+.description {
+  margin-top: var(--space-md);
+  max-width: 640px;
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}

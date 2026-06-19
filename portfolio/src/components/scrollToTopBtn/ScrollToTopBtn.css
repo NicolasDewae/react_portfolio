@@ -2,10 +2,10 @@
     border: none;
     position: fixed;
     top: 90%;
-    right: 88%;
+    right: 1.5rem;
     background-color: transparent;
   }
-  
+
   .scroll:hover {
     cursor: pointer;
     background-color: transparent;

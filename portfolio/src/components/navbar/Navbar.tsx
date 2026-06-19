@@ -1,38 +1,68 @@
 // src/components/navbar/Navbar.tsx
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { navLink, AUTHOR_NAME } from '../../data/i18n';
-import './Navbar.css';
+import styles from './Navbar.module.css';
 
 interface NavbarProps {
-  data: boolean;
+  translate: boolean;
+  onTranslate: () => void;
 }
 
-const Navbar = ({ data }: NavbarProps) => {
-  const [showLinks, setShowLinks] = useState(false);
+const Navbar = ({ translate, onTranslate }: NavbarProps) => {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const handleShowLinks = () => setShowLinks((prev) => !prev);
+  const items = translate ? navLink.fr : navLink.en;
 
-  const items = data ? navLink.fr : navLink.en;
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
 
   return (
-    <div className="header">
-      <div className="title">
-        <a href="/">{AUTHOR_NAME}</a>
-      </div>
-      <nav className={`nav ${showLinks ? 'showNav' : 'hideNav'}`}>
-        <ul className="links">
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
+      <Link to="/" className={styles.logo}>
+        {AUTHOR_NAME}
+      </Link>
+
+      <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
+        <ul className={styles.links}>
           {items.map((item) => (
             <li key={item.id}>
-              <a href={item.pathway}>{item.title}</a>
+              <Link
+                to={item.pathway}
+                className={`${styles.link} ${location.pathname === item.pathway ? styles.active : ''}`}
+              >
+                {item.title}
+              </Link>
             </li>
           ))}
+          <li>
+            <button className={styles.langToggle} onClick={onTranslate}>
+              {translate ? 'EN' : 'FR'}
+            </button>
+          </li>
         </ul>
-        <button className="burger" onClick={handleShowLinks}>
-          <span className="burger_line" />
-        </button>
       </nav>
-      <div />
-    </div>
+
+      <button
+        className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ''}`}
+        onClick={() => setMenuOpen((prev) => !prev)}
+        aria-label="Menu"
+        aria-expanded={menuOpen}
+      >
+        <span className={styles.burgerLine} />
+        <span className={styles.burgerLine} />
+        <span className={styles.burgerLine} />
+      </button>
+    </header>
   );
 };
 

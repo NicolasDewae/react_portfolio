@@ -1,0 +1,9 @@
+/* src/components/PageTransition/PageTransition.module.css */
+.wrapper {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.visible {
+  opacity: 1;
+}

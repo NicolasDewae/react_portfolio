@@ -2,15 +2,12 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Split from '../../components/split';
+import ScrollReveal from '../../components/ScrollReveal';
 import ScrollToTopBtn from '../../components/scrollToTopBtn';
-import CardProject from '../../components/cardProject';
-import Carousel from '../../components/carousel';
-import TranslateButton from '../../components/translateButton';
 import useTranslate from '../../hooks/useTranslate';
 import projectsData from '../../data/projectsData';
 import { previewProject } from '../../data/i18n';
-import './Works.css';
+import styles from './Works.module.css';
 
 const Works = () => {
   const { translate, handleTranslate } = useTranslate();
@@ -19,52 +16,32 @@ const Works = () => {
     : previewProject.en[0].button;
 
   return (
-    <>
-      <TranslateButton translate={translate} onTranslate={handleTranslate} />
-      <Navbar data={translate} />
-      <div className="project-list">
-        <CardProject
-          pathway={projectsData[0].pathway}
-          title={projectsData[0].title}
-          picture={projectsData[0].picture}
-        />
-        <CardProject
-          pathway={projectsData[1].pathway}
-          title={projectsData[1].title}
-          picture={projectsData[1].picture}
-        />
+    <div className={styles.page}>
+      <Navbar translate={translate} onTranslate={handleTranslate} />
+      <div className={styles.hero}>
+        <h1 className={styles.title}>
+          {translate ? 'Projets' : 'Works'}
+        </h1>
       </div>
-      <div className="work-list">
-        <div className="carousel">
-          <Carousel images={projectsData[0].projectImages} />
-          <div className="column">
-            <div>
-              <h2>{projectsData[0].title}</h2>
-            </div>
-            <div>
-              <Link to={`/project/${projectsData[0].pathway}`} className="button">
-                {buttonLabel}
-              </Link>
-            </div>
-          </div>
-        </div>
+      <div className={styles.grid}>
+        {projectsData.map((project, index) => (
+          <ScrollReveal key={project.id} delay={(index % 3) as 0 | 1 | 2 | 3}>
+            <Link to={`/project/${project.pathway}`} className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <img src={project.picture} alt={project.title} loading="lazy" className={styles.image} />
+              </div>
+              <div className={styles.meta}>
+                <span className={styles.index}>{String(index + 1).padStart(2, '0')}</span>
+                <h2 className={styles.cardTitle}>{project.title}</h2>
+                <span className={styles.label}>{buttonLabel}</span>
+              </div>
+            </Link>
+          </ScrollReveal>
+        ))}
       </div>
-      <div className="project-list">
-        <CardProject
-          pathway={projectsData[2].pathway}
-          title={projectsData[2].title}
-          picture={projectsData[2].picture}
-        />
-        <CardProject
-          pathway={projectsData[3].pathway}
-          title={projectsData[3].title}
-          picture={projectsData[3].picture}
-        />
-      </div>
-      <Split />
       <ScrollToTopBtn />
       <Footer data={translate} />
-    </>
+    </div>
   );
 };
 

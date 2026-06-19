@@ -15,6 +15,7 @@ import Confinement from './pages/project/confinement';
 import Canaries from './pages/project/canaries';
 import Street from './pages/project/street';
 import ScrollToTop from './components/scrollToTop';
+import PageTransition from './components/PageTransition';
 import { GA_TRACKING_ID } from './data/globalVar';
 import './index.css';
 
@@ -40,19 +41,21 @@ root.render(
     <Router>
       <AnalyticsTracker>
         <ScrollToTop>
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/works" element={<Works />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/project/streetview" element={<StreetView />} />
-            <Route path="/project/confinement" element={<Confinement />} />
-            <Route path="/project/canaries" element={<Canaries />} />
-            <Route path="/project/street" element={<Street />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<ArticleDetail />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <PageTransition>
+            <Routes>
+              <Route path="/" element={<App />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/works" element={<Works />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/project/streetview" element={<StreetView />} />
+              <Route path="/project/confinement" element={<Confinement />} />
+              <Route path="/project/canaries" element={<Canaries />} />
+              <Route path="/project/street" element={<Street />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<ArticleDetail />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </PageTransition>
         </ScrollToTop>
       </AnalyticsTracker>
     </Router>
