@@ -1,3 +1,4 @@
+'use client';
 // src/components/MasonryGrid/MasonryGrid.tsx
 import { useState, useEffect, useCallback } from 'react';
 import { ProjectImage } from '../../types/project.types';

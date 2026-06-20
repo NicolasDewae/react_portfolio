@@ -1,6 +1,7 @@
+'use client';
 // src/components/PageTransition/PageTransition.tsx
 import { ReactNode, useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { usePathname } from 'next/navigation';
 import styles from './PageTransition.module.css';
 
 interface PageTransitionProps {
@@ -8,7 +9,7 @@ interface PageTransitionProps {
 }
 
 const PageTransition = ({ children }: PageTransitionProps) => {
-  const location = useLocation();
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const PageTransition = ({ children }: PageTransitionProps) => {
       requestAnimationFrame(() => setVisible(true));
     });
     return () => cancelAnimationFrame(id);
-  }, [location.key]);
+  }, [pathname]);
 
   return (
     <div className={`${styles.wrapper} ${visible ? styles.visible : ''}`}>

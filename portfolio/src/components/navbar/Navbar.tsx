@@ -1,6 +1,8 @@
+'use client';
 // src/components/navbar/Navbar.tsx
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { navLink, AUTHOR_NAME } from '../../data/i18n';
 import styles from './Navbar.module.css';
 
@@ -12,7 +14,7 @@ interface NavbarProps {
 const Navbar = ({ translate, onTranslate }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   const items = translate ? navLink.fr : navLink.en;
 
@@ -24,11 +26,11 @@ const Navbar = ({ translate, onTranslate }: NavbarProps) => {
 
   useEffect(() => {
     setMenuOpen(false);
-  }, [location]);
+  }, [pathname]);
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
-      <Link to="/" className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         {AUTHOR_NAME}
       </Link>
 
@@ -37,8 +39,8 @@ const Navbar = ({ translate, onTranslate }: NavbarProps) => {
           {items.map((item) => (
             <li key={item.id}>
               <Link
-                to={item.pathway}
-                className={`${styles.link} ${location.pathname === item.pathway ? styles.active : ''}`}
+                href={item.pathway}
+                className={`${styles.link} ${pathname === item.pathway ? styles.active : ''}`}
               >
                 {item.title}
               </Link>

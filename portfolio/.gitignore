@@ -24,3 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 
 CLAUDE.md
+# Next.js
+/.next
+/out
+next-env.d.ts

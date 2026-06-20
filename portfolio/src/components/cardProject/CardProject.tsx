@@ -1,5 +1,5 @@
 // src/components/cardProject/CardProject.tsx
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import './CardProject.css';
 
 interface CardProjectProps {
@@ -9,7 +9,7 @@ interface CardProjectProps {
 }
 
 const CardProject = ({ pathway, title, picture }: CardProjectProps) => (
-  <Link className="card-link" to={`/project/${pathway}`}>
+  <Link className="card-link" href={`/project/${pathway}`}>
     <div className="preview-project">
       <div className="title">
         <h3>{title}</h3>

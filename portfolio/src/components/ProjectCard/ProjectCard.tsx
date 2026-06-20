@@ -1,5 +1,5 @@
 // src/components/ProjectCard/ProjectCard.tsx
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
@@ -11,7 +11,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, pathway, picture, label, index }: ProjectCardProps) => (
-  <Link to={`/project/${pathway}`} className={`${styles.card} ${index % 2 === 1 ? styles.cardOffset : ''}`}>
+  <Link href={`/project/${pathway}`} className={`${styles.card} ${index % 2 === 1 ? styles.cardOffset : ''}`}>
     <div className={styles.imageWrapper}>
       <img src={picture} alt={title} className={styles.image} loading="lazy" />
     </div>
