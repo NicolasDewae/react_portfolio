@@ -12,7 +12,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
   return (
     <form
       className="contact-form"
-      action={`https://formsubmit.co/${process.env.REACT_APP_MY_EMAIL}`}
+      action={`https://formsubmit.co/${process.env.NEXT_PUBLIC_MY_EMAIL}`}
       method="POST"
     >
       <input type="hidden" name="_next" value="/contact" />

@@ -1,5 +1,5 @@
 // src/components/previewProjectHome/PreviewProjectHome.tsx
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { PreviewProjectItem } from '../../types/i18n.types';
 import { ProjectListItem } from '../../types/project.types';
 import './PreviewProjectHome.css';
@@ -30,7 +30,7 @@ const PreviewProjectHome = ({ projects, data, isOpen, onToggle }: PreviewProject
           <div className="title">
             <h2>{projects.title}</h2>
           </div>
-          <Link className="button" to={`/project/${projects.pathway}`}>
+          <Link className="button" href={`/project/${projects.pathway}`}>
             {data[0].button}
           </Link>
         </div>

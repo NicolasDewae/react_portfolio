@@ -1,0 +1,32 @@
+/* src/pages/contact/Contact.module.css */
+.page {
+  padding-top: 100px;
+}
+
+.hero {
+  padding: var(--space-lg) var(--gutter) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin-top: var(--space-md);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+}
+
+.formWrapper {
+  max-width: 640px;
+  padding: var(--space-lg) var(--gutter);
+  margin: 0 auto;
+}

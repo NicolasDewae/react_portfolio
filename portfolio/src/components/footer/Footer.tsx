@@ -1,76 +1,62 @@
+'use client';
 // src/components/footer/Footer.tsx
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import dynamic from 'next/dynamic';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import InputMail from '../inputMail';
-import Split from '../split';
-import { footer } from '../../data/i18n';
-import './Footer.css';
+import { footer, AUTHOR_NAME, YEAR } from '../../data/i18n';
+import styles from './Footer.module.css';
+
+const FontAwesomeIcon = dynamic(
+  () => import('@fortawesome/react-fontawesome').then((m) => m.FontAwesomeIcon),
+  { ssr: false, loading: () => <span style={{ display: 'inline-block', width: '1em', height: '1em' }} /> }
+);
 
 interface FooterProps {
   data?: boolean;
 }
 
+interface SocialLink {
+  href: string;
+  icon: IconDefinition;
+  label: string;
+}
+
+const SOCIAL_LINKS: SocialLink[] = [
+  { href: 'https://www.instagram.com/nicolasdwphoto/', icon: faInstagram, label: 'Instagram' },
+  { href: 'https://github.com/NicolasDewae', icon: faGithub, label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/nicolas-de-waegenaere-959209232/', icon: faLinkedin, label: 'LinkedIn' },
+];
+
 const Footer = ({ data = true }: FooterProps) => {
   const item = data ? footer.fr[0] : footer.en[0];
 
   return (
-    <footer className="footer">
-      <div className="input_container">
-        <div className="text">
-          <div>
-            <h2>{item.message}</h2>
-          </div>
-        </div>
-        <div className="input">
+    <footer className={styles.footer}>
+      <div className={styles.top}>
+        <div className={styles.newsletter}>
+          <p className={styles.newsletterLabel}>{item.message}</p>
           <InputMail />
         </div>
+        <div className={styles.social}>
+          {SOCIAL_LINKS.map(({ href, icon, label }) => (
+            <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>
+              <FontAwesomeIcon icon={icon} />
+            </a>
+          ))}
+        </div>
       </div>
-      <Split />
-      <div className="notice_container">
-        <div className="left">
-          <div>
-            <h3>{item.copyright}</h3>
-          </div>
-          <div className="icons">
-            <a
-              href="https://www.instagram.com/nicolasdwphoto/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a
-              href="https://github.com/NicolasDewae"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nicolas-de-waegenaere-959209232/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </div>
-        </div>
-        <div className="vertical-line">
-          <span />
-        </div>
-        <div className="right">
-          <h3>{item.contextTitle}</h3>
-          <p>
-            {item.contextMessage}{' '}
-            <a
-              href="https://www.andredwagner.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              andredwagner.com
-            </a>
-          </p>
-        </div>
+
+      <div className={styles.bottom}>
+        <span className={styles.copyright}>
+          © {YEAR} {AUTHOR_NAME}
+        </span>
+        <p className={styles.context}>
+          {item.contextMessage}{' '}
+          <a href="https://www.andredwagner.com/" target="_blank" rel="noreferrer">
+            andredwagner.com
+          </a>
+        </p>
       </div>
     </footer>
   );

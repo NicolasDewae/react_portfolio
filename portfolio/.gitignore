@@ -24,4 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 
 CLAUDE.md
-REFACTORING.md
+# Next.js
+/.next
+/out
+next-env.d.ts

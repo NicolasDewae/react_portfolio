@@ -1,0 +1,134 @@
+/* src/pages/blog/Blog.module.css */
+.page {
+  padding-top: 100px;
+}
+
+.hero {
+  padding: var(--space-lg) var(--gutter) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-lg);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.loading {
+  text-align: center;
+  padding: var(--space-xl);
+  color: var(--color-text-muted);
+}
+
+.list {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  align-items: start;
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.articleImage {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.articleBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-top: var(--space-xs);
+}
+
+.articleTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.articleExcerpt {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.readMore {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  letter-spacing: 0.06em;
+  color: var(--color-text);
+  text-transform: uppercase;
+  position: relative;
+  align-self: flex-start;
+  padding-bottom: 2px;
+}
+
+.readMore::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-text);
+  transition: width var(--duration-base) var(--ease-reveal);
+}
+
+.readMore:hover::after {
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+}
+
+.paginationBtn {
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  opacity: 0.5;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.paginationBtn:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.paginationBtn:not(:disabled):hover {
+  opacity: 1;
+}
+
+.paginationPage {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .article {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+// src/hooks/useTranslate.ts
+import { useEffect, useState } from 'react';
 
 interface UseTranslateReturn {
   translate: boolean;
@@ -6,9 +7,13 @@ interface UseTranslateReturn {
 }
 
 const useTranslate = (): UseTranslateReturn => {
-  const raw = localStorage.getItem('defaultValueTranslate');
-  const defaultValue = raw !== 'false';
-  const [translate, setTranslate] = useState<boolean>(defaultValue);
+  // Démarre toujours en FR (safe pour SSR) puis lit localStorage après hydration
+  const [translate, setTranslate] = useState<boolean>(true);
+
+  useEffect(() => {
+    const raw = localStorage.getItem('defaultValueTranslate');
+    if (raw === 'false') setTranslate(false);
+  }, []);
 
   const handleTranslate = () => {
     setTranslate((prev) => {

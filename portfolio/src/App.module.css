@@ -1,0 +1,23 @@
+/* src/App.module.css */
+.page {
+  min-height: 100vh;
+}
+
+.projectsSection {
+  padding: var(--space-xl) var(--gutter);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg) var(--space-md);
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+}

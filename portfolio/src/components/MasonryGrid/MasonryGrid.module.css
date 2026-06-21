@@ -1,0 +1,113 @@
+/* src/components/MasonryGrid/MasonryGrid.module.css */
+.grid {
+  columns: 2;
+  column-gap: var(--space-sm);
+  padding: 0 var(--gutter);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: var(--space-sm);
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 600ms var(--ease-reveal), filter 300ms ease;
+  filter: grayscale(0.05);
+}
+
+.item:hover img {
+  transform: scale(1.02);
+  filter: grayscale(0);
+}
+
+.thumbnail {
+  cursor: zoom-in;
+}
+
+/* Lightbox */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxImg {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  user-select: none;
+}
+
+.close {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 150ms ease;
+  z-index: 1001;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.navBtn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 4rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  opacity: 0.6;
+  transition: opacity 150ms ease;
+  z-index: 1001;
+  line-height: 1;
+  user-select: none;
+}
+
+.navBtn:hover {
+  opacity: 1;
+}
+
+.navPrev {
+  left: 1rem;
+}
+
+.navNext {
+  right: 1rem;
+}
+
+.counter {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    columns: 1;
+  }
+}

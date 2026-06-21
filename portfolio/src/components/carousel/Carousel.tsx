@@ -1,8 +1,14 @@
+'use client';
 // src/components/carousel/Carousel.tsx
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import dynamic from 'next/dynamic';
+import { useState } from 'react';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './Carousel.css';
+
+const FontAwesomeIcon = dynamic(
+  () => import('@fortawesome/react-fontawesome').then((m) => m.FontAwesomeIcon),
+  { ssr: false, loading: () => null }
+);
 
 interface CarouselProps {
   images: string[];
