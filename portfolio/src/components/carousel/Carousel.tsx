@@ -1,14 +1,8 @@
 'use client';
 // src/components/carousel/Carousel.tsx
-import dynamic from 'next/dynamic';
 import { useState } from 'react';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { IconChevronLeft, IconChevronRight } from '../icons';
 import './Carousel.css';
-
-const FontAwesomeIcon = dynamic(
-  () => import('@fortawesome/react-fontawesome').then((m) => m.FontAwesomeIcon),
-  { ssr: false, loading: () => null }
-);
 
 interface CarouselProps {
   images: string[];
@@ -26,11 +20,11 @@ const Carousel = ({ images }: CarouselProps) => {
   return (
     <div className="carousel-container">
       <div className="arrow previous" onClick={handlePrevious}>
-        <FontAwesomeIcon icon={faChevronLeft} />
+        <IconChevronLeft />
       </div>
       <img src={images[currentIndex]} alt="carousel" className="carousel-image" />
       <div className="arrow next" onClick={handleNext}>
-        <FontAwesomeIcon icon={faChevronRight} />
+        <IconChevronRight />
       </div>
     </div>
   );

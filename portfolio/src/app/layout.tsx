@@ -1,13 +1,9 @@
 // src/app/layout.tsx
 import type { Metadata } from 'next';
-import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import ScrollToTop from '../components/scrollToTop';
 import PageTransition from '../components/PageTransition';
 import '../index.css';
-
-config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body>
         <ScrollToTop />
         <PageTransition>{children}</PageTransition>
